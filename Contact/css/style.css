@@ -1,0 +1,329 @@
+@import url(../../reset.css);
+
+
+html {
+    font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+    font-size: 62.5%;
+    /* 預設字級調整為10px */
+    letter-spacing: 0.2em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    line-height: 200%;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+
+/*---------------------------------- body */
+
+body>i {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 2;
+
+    color: #020F1A;
+    font-size: 2rem;
+}
+
+
+/*---------------------------------- header */
+
+.header {
+    height: 80px;
+    
+
+    overflow: hidden;
+}
+
+.bgi {
+    width: 100%;
+    display: block;
+
+    position: relative;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+    height: 80px;
+    width: 100%;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.btn-back {
+    height: 50%;
+    text-decoration: none;
+}
+
+.top img {
+    height: 100%;
+}
+
+.btn-contact{
+    font-size: 1.8rem;
+    color: #020F1A;
+    text-decoration: none;
+    line-height: 25px;
+    border-bottom: 2px solid #020F1A;
+    display: block;
+}
+
+.top ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.top ul a {
+    font-size: 1.8rem;
+    color: #020F1A;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+}
+
+/*---------------------------------- main */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+    padding: 0 135px 160px;
+}
+
+
+/*---------------------------------- contact */
+.contact {
+    width: 30vw;
+    margin: 16px;
+}
+
+.contact div {
+    position: sticky;
+    top: 256px;
+}
+
+.contact h1 {
+    color: #020F1A;
+    font-weight: bold;
+    
+}
+
+.contact p {
+    color: #7F7F7F;
+    margin-top: 24px;
+}
+
+.contact p span:first-child {
+    color: #8E3D2F;
+}
+
+/*---------------------------------- form */
+.form {
+    width: 40vw;
+    margin-top: 108px;
+    margin-left: 16px;
+}
+
+.btn {
+    margin-bottom: 72px;
+}
+
+.tab-btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #020F1A;
+    display: inline-block;
+    text-align: center;
+    width: 152px;
+    line-height: 48px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.tab-btn:hover {
+    background-color: #E3C5A4;
+    color: #020F1A;
+    border: 1px solid #d1d1d100;
+}
+
+.tab-btn.active {
+    background-color: #E3C5A4;
+    color: #020F1A;
+    border: 1px solid #d1d1d100;
+}
+
+.demands label, .space label {
+    color: #7F7F7F;
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 8px;
+}
+
+.space {
+    margin-top: 40px;
+}
+
+.req{
+    color: #8E3D2F;
+}
+
+.form h6{
+    color: #7F7F7F;
+}
+
+.word {
+    margin-left: 8px;
+}
+
+.btn-submit {
+    width: 152px;
+    line-height: 48px;
+    height: 48px;
+    font-size: 1.6rem;
+    color: #F0F9FF;
+    background-color: #0A4C78;
+    border: none;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+
+.info {
+    margin-top: 40px;
+}
+
+.info h6 {
+    margin-top: 40px;
+}
+
+.ans {
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    font-family:  "Noto Sans TC", "Noto Sans", sans-serif;
+    color: #020F1A;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+textarea {
+    height: 160px;
+}
+
+.info label:last-child {
+    font-size: 1.6rem;
+    color: #7F7F7F;
+}
+
+
+
+/*---------------------------------- footer */
+
+footer {
+    background-color: #F0F9FF;
+    padding: 80px 60px 60px;
+}
+
+.menu {
+    display: flex;
+
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+.menu a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #020F1A;
+    line-height: 60px;
+    display: block;
+}
+
+.social {
+    display: flex;
+}
+
+.social li {
+    margin-right: 30px;
+}
+
+.social a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #7F7F7F;
+    line-height: 80px;
+    display: block;
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 80px;
+}
+
+.bottom img {
+    width: 30%;
+    margin-right: 20px;
+    margin-bottom: -15px;
+}
+
+.bottom div p {
+    color: #7F7F7F;
+    font-size: 1.4rem;
+}
+
+.bottom div {
+    margin-bottom: -4px;
+}
+
+.bottom a {
+    font-size: 1.4rem;
+    color: #7F7F7F;
+    margin-left: auto;
+}
