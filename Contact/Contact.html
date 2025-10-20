@@ -65,7 +65,7 @@
                 <a href="#" class="tab-btn">合作邀約</a>
             </div>
 
-            <form action="#" method="POST">
+            <form class="consult" action="#" method="POST">
                 <div class="demands">
                     <h6>——諮詢類型<span class="req">＊</span>（可複選）</h5>
                     <label><input type="checkbox" name="demands" value="design" ><span class="word">設計</span></label>
@@ -106,6 +106,76 @@
 
                 <input class="btn-submit" type="submit" value="送出表單">
             </form>
+
+
+            <form class="join" action="#" method="POST">
+                <div class="demands">
+                    <h6>——應徵職位<span class="req">＊</span></h5>
+                    <label><input type="checkbox" name="demands" value="architect" ><span class="word">建築設計</span></label>
+                    <label><input type="checkbox" name="demands" value="interior" ><span class="word">室內設計</span></label>
+                </div>
+                <br>
+                <div class="info">
+                    <h6>姓名<span class="req">＊</span></h5>
+                    <label><input class="ans" type="text" placeholder="" required></label>
+                    <br>
+                    <h6>電話<span class="req">＊</span></h5>
+                    <label><input class="ans" type="tel" placeholder="" required></label>
+                    <br>
+                    <h6>Email<span class="req">＊</span></h5>
+                    <label><input class="ans" type="email" placeholder="" required></label>
+                    <br>
+                    <h6>請分享您對「建築再生」的觀點，以及希望在團隊中擔任的角色<span class="req">＊</span></h5>
+                    <textarea class="ans" placeholder="這是我們最重視的問題，請以 200 字內闡述。" required></textarea>
+                    <br>
+                    <h6>個人履歷上傳（限 2MB）<span class="req">＊</span></h5>
+                    <label><input class="ans file" type="file" placeholder="" required></label>
+                    <br>
+                    <h6>作品集連結<span class="req">＊</span></h5>
+                    <label><input class="ans" type="url" placeholder="" required></label>
+                    <br>
+                    <label><input type="radio" name="privacy" value="other" required><span class="word">我同意隱私權政策</span><span class="req">＊</span></label>
+                </div>
+
+                <input class="btn-submit" type="submit" value="送出表單">
+            </form>
+
+            
+            <form class="invite" action="#" method="POST">
+                <div class="demands">
+                    <h6>——合作類型<span class="req">＊</span>（可複選）</h5>
+                    <label><input type="checkbox" name="demands" value="business" ><span class="word">商業合作</span></label>
+                    <label><input type="checkbox" name="demands" value="public" ><span class="word">公益合作</span></label>
+                    <label><input type="checkbox" name="demands" value="other" ><span class="word">其他（請於「合作詳情」說明）</span></label>
+                </div>
+                <br>
+                <div class="info">
+                    <h6>公司名稱<span class="req">＊</span></h5>
+                    <label><input class="ans" type="text" placeholder="" required></label>
+                    <br>
+                    <h6>聯絡人<span class="req">＊</span></h5>
+                    <label><input class="ans" type="text" placeholder="" required></label>
+                    <br>
+                    <h6>電話<span class="req">＊</span></h5>
+                    <label><input class="ans" type="tel" placeholder="" required></label>
+                    <br>
+                    <h6>Email<span class="req">＊</span></h5>
+                    <label><input class="ans" type="email" placeholder="" required></label>
+                    <br>
+                    <h6>預計合作範疇<span class="req">＊</span></h5>
+                    <textarea class="ans" placeholder="請簡述預計合作的領域，例如：產品開發、技術共享、品牌活動、場域贊助等。" required></textarea>
+                    <br>
+                    <h6>企劃書連結/品牌網站<span class="req">＊</span></h5>
+                    <label><input class="ans" type="url" placeholder="" required></label>
+                    <br>
+                    <label><input type="radio" name="privacy" value="other" required><span class="word">我同意隱私權政策</span><span class="req">＊</span></label>
+                </div>
+
+                <input class="btn-submit" type="submit" value="送出表單">
+            </form>
+
+
+
             
         </section>
 

@@ -8,38 +8,14 @@ html {
     letter-spacing: 0.2em;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    line-height: 200%;
-}
-
-h1 {
-    font-size: 3.2rem;
-}
-
-h2 {
-    font-size: 2.4rem;
-}
-
-h3 {
-    font-size: 2.2rem;
-}
-
-h4 {
-    font-size: 2rem;
-}
-
-h5 {
-    font-size: 1.8rem;
-}
-
-h6 {
-    font-size: 1.6rem;
-}
-
-p {
-    font-size: 1.4rem;
-}
-
+h1, h2, h3, h4, h5, h6, p {line-height: 200%;}
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 2.2rem;}
+h4 {  font-size: 2rem;}
+h5 {font-size: 1.8rem;}
+h6 {font-size: 1.6rem;}
+p {font-size: 1.4rem;}
 
 /*---------------------------------- body */
 
@@ -155,6 +131,19 @@ main {
 }
 
 /*---------------------------------- form */
+.invite {
+    display: none;
+}
+
+.join {
+   display: none; 
+}
+
+.consult {
+   /* display: none;  */
+}
+
+
 .form {
     width: 40vw;
     margin-top: 108px;
@@ -256,7 +245,27 @@ textarea {
     color: #7F7F7F;
 }
 
+::placeholder {
+    color: #d1d1d1;
+    font-size: 1.4rem;
+    font-weight:normal;
+    letter-spacing: 0.2em;
+}
 
+.file {
+    color: #7F7F7F;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em; 
+}
+
+.ans::file-selector-button {
+    appearance: none;
+    border-radius: 10px;
+    border: 1px solid #7F7F7F ;
+    color: #020F1A;
+    letter-spacing: 0.1em; 
+    padding: 4px 8px;
+}
 
 /*---------------------------------- footer */
 
