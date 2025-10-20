@@ -204,6 +204,22 @@ h1 {
 
 /*article ----------------------------------*/
 
+.law {
+    /* display: none; */
+}
+
+.structure {
+    display: none;
+}
+
+.cost {
+    display: none;
+}
+
+.design {
+    display: none;
+}
+
 .qa {
     color: #7F7F7F;
 }
@@ -213,6 +229,8 @@ h1 {
     align-items: center;
     justify-content: space-between;
     padding: 0 28px 28px;
+    text-decoration: none;
+    color: #7F7F7F;
 }
 
 hr {
@@ -229,6 +247,26 @@ hr {
     border-top: 1px solid #d1d1d1;
 }
 
+/*連結效果 ----------------------------------*/
+.q:visited {
+    color: #020F1A;
+}
+
+.q:hover, .q:active{
+    color: #0065A5;
+}
+
+.ans a:link {
+    color: #CC8956;
+}
+
+.ans a:visited {
+    color: #8E3D2F;
+}
+
+.ans a:hover, .ans a:active{
+    color: #0065A5;
+}
 
 /*---------------------------------- footer */
 
