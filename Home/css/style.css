@@ -367,7 +367,7 @@ letter-spacing: 0.6em;
     padding-top: 10vh;
 }
 
-.contact a {
+.contact .btn-contact {
     text-decoration: none;
     display: block;
     height: 60vh;
@@ -385,14 +385,27 @@ letter-spacing: 0.6em;
 
 .contact h1 {
     color: #020F1A;
-    border-bottom: 2px solid #CC8956;
+    /* border-bottom: 2px solid #CC8956; */
     line-height: 48px;
     font-size: 36px;
     font-weight: bold;
     align-self: flex-start;
+
+    background-image: linear-gradient(to right, #CC8956, #CC8956);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 0% 2px;
+    transition: background-size 0.4s ease-out;
+
 }
 
-.contact h1+div {
+.contact h1:hover {
+    /* 將寬度從 0% 變為 100%，線條就會從左邊滑出填滿整個文字寬度 */
+    background-size: 100% 2px; 
+    background-position: left bottom;
+}
+
+.contact .img-contact {
     width: 120px;
     height: 200px;
     align-self: end;
