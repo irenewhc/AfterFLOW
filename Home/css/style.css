@@ -399,7 +399,7 @@ letter-spacing: 0.6em;
 
 }
 
-.contact h1:hover {
+.btn-contact:hover h1{
     /* 將寬度從 0% 變為 100%，線條就會從左邊滑出填滿整個文字寬度 */
     background-size: 100% 2px; 
     background-position: left bottom;
