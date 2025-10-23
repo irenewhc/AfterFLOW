@@ -335,6 +335,10 @@ footer {
     display: block;
 }
 
+.social a:hover{
+    color: #CC8956;
+}
+
 .bottom {
     display: flex;
     align-items: flex-end;

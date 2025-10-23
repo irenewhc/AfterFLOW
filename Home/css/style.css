@@ -385,7 +385,6 @@ letter-spacing: 0.6em;
 
 .contact h1 {
     color: #020F1A;
-    /* border-bottom: 2px solid #CC8956; */
     line-height: 48px;
     font-size: 36px;
     font-weight: bold;
@@ -393,9 +392,9 @@ letter-spacing: 0.6em;
 
     background-image: linear-gradient(to right, #CC8956, #CC8956);
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right bottom;     /* 固定在右邊，才會從右邊離開 */
     background-size: 0% 2px;
-    transition: background-size 0.4s ease-out;
+    transition: background-size 0.4s ease-out;   /* 固定在右邊，才會從右邊離開 */
 
 }
 
@@ -477,6 +476,10 @@ footer {
     color: #7F7F7F;
     line-height: 80px;
     display: block;
+}
+
+.social a:hover{
+    color: #CC8956;
 }
 
 .bottom {
