@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+    <i class="fa-solid fa-bars-staggered"></i>
     <i class="fa-solid fa-chevron-up"></i>
 
     <!-- header -->
@@ -25,7 +25,6 @@
         <img class="bgi" src="../assets/Event/Sala_Beckett/1.jpg" alt="">
 
         <nav class="top">
-            <i class="fa-solid fa-bars-staggered"></i>
             <a class="btn-back" href="../Home/index.html"><img src="../assets/LOGO/LOGO_W.png" alt=""></a>
             <ul>
                 <li><a href="../About/About.html">About</a></li>
@@ -40,6 +39,7 @@
         <div class="banner">
             <h5>Sala Backett</h5> <!-- 這行會根據輪播的圖片跑文字 -->
             <a href="../Event/Event.html"><h5>SEE MORE</h5></a>
+            <i class="fa-solid fa-chevron-right"></i>
         </div>
 
         <img class="logo" src="../assets/LOGO/LOGO_W_W.png" alt="">
@@ -53,10 +53,10 @@
 
         <ul>
             <li>
-                <a href="#">
+                <a class="img-event" href="#">
                     <img src="../assets/Event/Civic_Centre/11.jpg" alt="">
                 </a>
-                <a href="#">
+                <a class="word-event" href="#">
                     <h3>Civic Centre Lleialtat Santsenca 1214</h3>
                     <h4>HARQUITECTES</h4>
                     <div class="ac">
@@ -72,10 +72,10 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a class="img-event" href="#">
                     <img src="../assets/Event/El_Roser /4.jpg" alt="">
                 </a>
-                <a href="#">
+                <a class="word-event" href="#">
                     <h3>El Roser Social Center</h3>
                     <h4>Gallego Arquitectura, Josep Ferrando Architecture</h4>
                     <div class="ac">
@@ -91,10 +91,10 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a class="img-event" href="#">
                     <img src="../assets/Event/New_Lecture_Center/1.jpg" alt="">
                 </a>
-                <a href="#">
+                <a class="word-event" href="#">
                     <h3>New Lecture Center VŠPJ</h3>
                     <h4>QARTA architektura</h4>
                     <div class="ac">
@@ -130,12 +130,12 @@
         <article>
             <p>"一場毀滅性的大火摧毀了擁有數百年歷史的巴黎聖母院，重建這座神聖建築的人們面臨著一項艱鉅的任務：將中世紀、19世紀和現代三個建築時代的風格和創新融為一體。"</p>
             <div>
-                <h2>從火災中重生的過去和現在</h2>
+                <h2>火災中重生的過去和現在</h2>
                 <p>Notre-Dame de Paris</p>
             </div>
         </article>
         <div>
-            <div>
+            <div class="img-article">
                 <img src="../assets/Notre-Dame/1.jpg" alt="">
             </div>
             <!-- <a href="#">See All</a> -->
@@ -150,8 +150,6 @@
                     <span>l</span>
                 </span>
             </a>
-
-
         </div>
     </section>
 
@@ -196,28 +194,32 @@
     <!-- footer -->
 
     <footer>
-
+        <hr>
         <ul class="menu">
             <li><a href="../About/About.html">About</a></li>
             <li><a href="../Event/Event.html">Event</a></li>
             <li><a href="../FAQ/FAQ.html">FAQ</a></li>
             <li><a href="../Contact/Contact.html">Contact</a></li>
         </ul>
-
+        <hr>
         <ul class="social">
             <li><a href="#">- Facebook</a></li>
             <li><a href="#">- Instagram</a></li>
         </ul>
-
+        <hr>
         <div class="bottom">
             
-             <img src="../assets/LOGO/LOGO+W.png" alt="">
-             <div>
-                    <p>© Copyright 2025 AfterFLOW Lab</p>
-                    <p>Mail:afterflowlab@afterflow-lab.com.tw</p>
-                </div>
+            <img src="../assets/LOGO/LOGO+W.png" alt="">
             
-            <a href="#">Privacy Policy</a>
+            <div class="word-bottom">
+                <div>
+                    <p>© Copyright 2025 AfterFLOW Lab</p>
+                    <p>Mail:<span class="mail">afterflowlab@afterflow-lab.com.tw</span></p>
+                </div>
+
+                <a href="#">Privacy Policy</a>               
+            </div>
+
         </div>
     </footer>
 

@@ -96,7 +96,6 @@ body>i {
 /*---------------------------------- about */
 main {
     margin-top: 160px;
-    /* padding: 0 135px 160px; */
 }
 
 /*---------------------------------- contact */
@@ -239,7 +238,7 @@ main {
     background-repeat: no-repeat;
     background-position: right bottom;     /* 固定在右邊，才會從右邊離開 */
     background-size: 0% 2px;
-    transition: background-size 0.4s ease-out;   /* 固定在右邊，才會從右邊離開 */
+    transition: background-size 0.4s ease-out;   /* 補間動畫執行的方式，寫在這邊，離開時才會也有補間效果 */
 }
 
 .btn-contact:hover h1{
@@ -350,3 +349,16 @@ footer {
     color: #7F7F7F;
     margin-left: auto;
 }
+
+
+/*----------------------------------------------- RWD */
+/*----------------------------------------------- RWD 1200*/
+@media screen and (max-width: 1200px){}
+/*----------------------------------------------- RWD 992*/
+@media screen and (max-width: 992px){}
+/*----------------------------------------------- RWD 768*/
+@media screen and (max-width: 768px){}
+/*----------------------------------------------- RWD 576*/
+@media screen and (max-width: 576px){}
+/*----------------------------------------------- RWD 440*/
+@media screen and (max-width: 440px){}
