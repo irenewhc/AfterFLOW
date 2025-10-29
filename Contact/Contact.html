@@ -17,14 +17,52 @@
 </head>
 
 <body>
+    <div class="top-fixed">
+        <i class="fa-solid fa-bars-staggered"></i>
+        <a class="btn-home" href="../Home/index.html"><img src="../assets/LOGO/LOGO_B.png" alt=""></a>
+    </div>
 
     <i class="fa-solid fa-chevron-up"></i>
+
+    <!-- 漢堡選單 -->
+    <nav class="btn-menu">
+        <div class="nav1">
+            <i class="fa-solid fa-xmark"></i>
+            <a class="btn-logo" href="../Home/index.html"><img src="../assets/LOGO/LOGO_B.png" alt=""></a>
+            <a  href="../Contact/Contact.html">Contact</a></li>
+        </div>
+        <div class="nav2">
+            <ul class="menu-list">
+                <li><a href="../About/About.html">About</a></li>
+                <li><a href="../Partner/Partner.html">Partner</a></li>
+                <li><a href="../Article/Article.html">Article</a></li>
+                <li><a href="../Event/Event.html">Event</a></li>
+                <li><a href="../FAQ/FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="nav3">
+            <div class="nav4">
+                <p>- ABOUT -</p>
+                <br>
+                <p>AfterFLOW<br>關於時間延續與空間重生的命題</p>
+                <p>作為引導者，我們從「時光、場域再定義、減法」 出發，讓每寸空間都成為一位有層次感的敘事者，向過去致敬，為未來低語。</p>
+                <br>
+                <a href="../Contact/Contact.html">Share your story with us..</a>
+            </div>
+            <div class="nav5">
+                <ul class="nav-social">
+                    <li><a href="#">- Facebook</a></li>
+                    <li><a href="#">- Instagram</a></li>
+                </ul>
+                <a href="#">Privacy Policy</a>       
+            </div>
+        </div>
+    </nav>
 
     <!-- header -->
     <header class="header">
 
         <nav class="top">
-            <a class="btn-back" href="../Home/index.html"><img src="../assets/LOGO/LOGO_B.png" alt=""></a>
             <ul>
                 <li><a href="../About/About.html">About</a></li>
                 <li><a href="../Partner/Partner.html">Partner</a></li>
@@ -126,7 +164,7 @@
                     <label><input class="ans" type="email" placeholder="" required></label>
                     <br>
                     <h6>請分享您對「建築再生」的觀點，以及希望在團隊中擔任的角色<span class="req">＊</span></h5>
-                    <textarea class="ans" placeholder="這是我們最重視的問題，請以 200 字內闡述。" required></textarea>
+                    <textarea class="ans" placeholder="這是我們最重視的問題，請以 200 字內闡述。" maxlength="200" required></textarea>
                     <br>
                     <h6>個人履歷上傳（限 2MB）<span class="req">＊</span></h5>
                     <label><input class="ans file" type="file" placeholder="" required></label>
@@ -173,39 +211,41 @@
 
                 <input class="btn-submit" type="submit" value="送出表單">
             </form>
-
-
-
             
         </section>
 
     </main>
 
     <!-- footer -->
-
     <footer>
-
+        <hr>
         <ul class="menu">
             <li><a href="../About/About.html">About</a></li>
+            <li><a href="../Partner/Partner.html">Partner</a></li>
+            <li><a href="../Article/Article.html">Article</a></li>
             <li><a href="../Event/Event.html">Event</a></li>
             <li><a href="../FAQ/FAQ.html">FAQ</a></li>
             <li><a href="../Contact/Contact.html">Contact</a></li>
         </ul>
-
+        <hr>
         <ul class="social">
             <li><a href="#">- Facebook</a></li>
             <li><a href="#">- Instagram</a></li>
         </ul>
-
+        <hr>
         <div class="bottom">
-
+            
             <img src="../assets/LOGO/LOGO+W.png" alt="">
-            <div>
-                <p>© Copyright 2025 AfterFLOW Lab</p>
-                <p>Mail:afterflowlab@afterflow-lab.com.tw</p>
+            
+            <div class="word-bottom">
+                <div>
+                    <p>© Copyright 2025 AfterFLOW Lab</p>
+                    <p>Mail:<span class="mail">afterflowlab@afterflow-lab.com.tw</span></p>
+                </div>
+
+                <a href="#">Privacy Policy</a>               
             </div>
 
-            <a href="#">Privacy Policy</a>
         </div>
     </footer>
 

@@ -202,7 +202,6 @@ p {font-size: 1.4rem;}
     position: absolute;
     left: 0;
     top: 0;
-    box-sizing: border-box;
     z-index: 2;
 }
 
