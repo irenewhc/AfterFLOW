@@ -1,0 +1,1106 @@
+@import url(../reset.css);
+
+
+html {
+    font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+    font-size: 62.5%;               /* 預設字級調整為10px */
+    letter-spacing: 0.2em;
+
+    background-color: #fff;       /* 讓漢堡選單在白底時變黑色 */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {line-height: 200%;}
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 2.2rem;}
+h4 {font-size: 2rem;}
+h5 {font-size: 1.8rem;}
+h6 {font-size: 1.6rem;}
+p {font-size: 1.4rem;}
+
+/*---------------------------------- body */
+.fa-bars-staggered {
+    position: fixed;
+    left: 60px;
+    top: 32px;
+    z-index: 20;
+    color: #fff;
+
+    font-size: 2rem;
+    mix-blend-mode: difference;
+}
+
+.fa-chevron-up {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 5;
+
+    color: #020F1A;
+    font-size: 2rem;
+}
+
+.fa-bars-staggered:hover~.btn-menu {
+    left: 0%;
+}
+
+/* 漢堡選單 ----------------------------------*/
+.btn-menu {
+    background-color: #F0F9FF;
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    padding: 0 60px 20px;
+    left: -100%;
+}
+
+.nav1 {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fa-xmark {
+    font-size: 2rem;
+    color: #020F1A;
+}
+
+.btn-logo {
+    height: 50%;
+    margin-left: 15px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.nav1 img {
+    height: 70%;
+}
+
+.nav1 a:last-of-type {
+    color: #020F1A;
+    font-size: 1.8rem;
+    margin-left: auto;
+    line-height: 25px;
+    text-decoration: none;
+    border-bottom: 1px solid #020F1A;
+}
+
+.nav2 .menu-list a {
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #020F1A;
+    line-height: 50px;
+    display: inline-block;
+    margin-left: 30%;
+
+    background-image: linear-gradient(to right, #020F1A, #020F1A);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /* 固定在右邊，才會從右邊離開 */
+    background-size: 0% 2px;
+    transition: background-size 0.4s ease-out;
+}
+
+.menu-list a:hover {
+    /* 將寬度從 0% 變為 100%，線條就會從左邊滑出填滿整個文字寬度 */
+    background-size: 100% 2px;
+    background-position: left bottom;
+}
+
+.nav3 {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 40px;
+}
+
+.nav4 {
+    width: 25%;
+}
+
+.nav4 p {
+    font-size: 1.2rem;
+}
+
+.nav4 p:nth-of-type(2) {
+    font-weight: bold;
+}
+
+.nav4 a {
+    font-size: 1.2rem;
+    color: #5d5d5d;
+    font-weight: lighter;
+    line-height: 200%;
+}
+
+.nav5 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 70%;
+}
+
+.nav-social {
+    display: flex;
+}
+
+.nav-social li {
+    margin-right: 30px;
+}
+
+.nav-social a:hover {
+    color: #CC8956;
+}
+
+.nav-social a {
+    font-size: 1.8rem;
+    line-height: 200%;
+    text-decoration: none;
+    color: #7F7F7F;
+
+    display: block;
+}
+
+.nav5>a {
+    font-size: 1.4rem;
+    color: #7F7F7F;
+    line-height: 200%;
+    margin-left: auto;
+}
+
+/*---------------------------------- header */
+
+.header {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bgi {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+    object-position: center center;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+    height: 80px;
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.btn-back {
+    height: 50%;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.top img {
+    height: 70%;
+}
+
+.btn-contact {
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    line-height: 25px;
+    border-bottom: 1px solid #fff;
+    display: block;
+}
+
+.top ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.top ul a {
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid #fff;
+    margin: 0 60px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: calc(100% - 120px);
+}
+
+.banner a {
+    text-decoration: none;
+}
+
+.banner h5 {
+    color: #fff;
+    line-height: 60px;
+    letter-spacing: 1em;
+}
+
+.banner i {
+    display: none;
+}
+
+.header .logo {
+    position: absolute;
+    left: 60px;
+    bottom: -60px;
+
+    width: 50%;
+}
+
+/*---------------------------------- event */
+
+.event {
+    width: 100%;
+    margin-top: 160px;
+
+    overflow-x: hidden;
+
+    position: relative;
+}
+
+.event ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 160px;
+}
+
+.event li {
+    width: 970px;
+    flex-shrink: 0;
+}
+
+/* event img ----------------------------------*/
+.event .img-event {
+    display: block;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.img-event img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* event word ----------------------------------*/
+.event .word-event {
+    text-decoration: none;
+    text-align: right;
+}
+
+.event h3 {
+    color: #020F1A;
+}
+
+.event h4 {
+    color: #7F7F7F;
+    margin: 5px 0;
+}
+
+.event p {
+    font-size: 1.4rem;
+}
+
+.event .black {
+    color: #020F1A;
+}
+
+.event .gray {
+    color: #7F7F7F;
+}
+
+.event .ac {
+    display: flex;
+    justify-content: right;
+}
+
+.area {
+    display: flex;
+}
+
+.completion {
+    display: flex;
+    margin-left: 10px;
+}
+
+/* event more + LOGO ----------------------------------*/
+.event>a {
+    font-size: 2.4rem;
+    color: #7F7F7F;
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+
+    line-height: 80px;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.text-wrapper span:last-child {
+    letter-spacing: 0;
+    /*  */
+}
+
+.event .logo {
+    /* margin-top: -160px;
+    margin-left: 60px;
+    position: sticky;
+    top: 10px; */
+    left: 60px;
+    bottom: 20px;
+    position: absolute;
+
+    width: 50%;
+
+    z-index: -1;
+}
+
+/* .event {
+    height: 100vh;
+} */
+
+
+/*---------------------------------- article */
+
+.article {
+    margin: 160px 0;
+
+    position: relative;
+}
+
+.article article {
+    height: 360px;
+    width: 360px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 36px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: absolute;
+    left: 8vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    z-index: 1;
+}
+
+.article h2 {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.article>div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.article .img-article {
+    width: 60vw;
+    height: 70vh;
+    margin-left: 25vw;
+}
+
+.article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+    filter: contrast(.9);
+}
+
+.article a {
+    font-size: 2.4rem;
+    color: #7F7F7F;
+    margin-left: 20px;
+}
+
+/*---------------------------------- about */
+
+.about {
+    display: flex;
+    margin-bottom: 160px;
+}
+
+.about article {
+    width: 30vw;
+    margin: auto;
+    margin-left: 135px;
+    margin-right: 40px;
+}
+
+.about article h5 {
+    letter-spacing: 0.6em;
+}
+
+.about article h1 {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.about article a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid#7F7F7F;
+    border-radius: 10px;
+    margin-top: 40px;
+    line-height: 52px;
+    width: 160px;
+    color: #5d5d5d;
+    text-align: center;
+}
+
+.about article p {
+    color: #5d5d5d;
+}
+
+.about div {
+    width: 70vw;
+    height: 80vh;
+}
+
+.about div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/*---------------------------------- contact */
+.contact {
+    background-image: url(../../assets/bgi/contact_bgi-min.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 80vh;
+    padding: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .btn-contact {
+    text-decoration: none;
+    display: block;
+    width: 30vw;
+    aspect-ratio: 2/2.2;
+    background-color: #FBF5EF;
+    border-radius: 10px;
+    padding: 44px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact h1 {
+    color: #020F1A;
+    line-height: 48px;
+    font-size: 3.6rem;
+    font-weight: bold;
+    align-self: flex-start;
+
+    background-image: linear-gradient(to right, #CC8956, #CC8956);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /* 固定在右邊，才會從右邊離開 */
+    background-size: 0% 2px;
+    transition: background-size 0.4s ease-out;
+    /* 補間動畫執行的方式，寫在這邊，離開時才會也有補間效果 */
+}
+
+.btn-contact:hover h1 {
+    /* 將寬度從 0% 變為 100%，線條就會從左邊滑出填滿整個文字寬度 */
+    background-size: 100% 2px;
+    background-position: left bottom;
+}
+
+.contact .img-contact {
+    width: 120px;
+    height: 200px;
+    align-self: end;
+    margin-top: 1vh; 
+    margin-bottom: 5vh;
+}
+
+.contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.contact div+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact p {
+    color: #7F7F7F;
+}
+
+.contact i {
+    color: #020F1A;
+    font-size: 2rem;
+}
+
+/*---------------------------------- footer */
+
+footer {
+    background-color: #F0F9FF;
+    padding: 80px 60px 60px;
+}
+
+hr {
+    border: 0.5px solid #d1d1d1;
+}
+
+hr:nth-last-of-type(1) {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    padding: 10px 0;
+}
+
+.menu li {
+    margin-right: 15px;
+}
+
+.menu li:last-child {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.menu a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #020F1A;
+    line-height: 30px;
+    display: inline-block;
+
+    background-image: linear-gradient(to right, #020F1A, #020F1A);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /* 固定在右邊，才會從右邊離開 */
+    background-size: 0% 2px;
+    transition: background-size 0.4s ease-out;
+}
+
+.menu a:hover {
+    /* 將寬度從 0% 變為 100%，線條就會從左邊滑出填滿整個文字寬度 */
+    background-size: 100% 2px;
+    background-position: left bottom;
+}
+
+.social {
+    display: flex;
+}
+
+.social li {
+    margin-right: 30px;
+}
+
+.social a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #7F7F7F;
+    line-height: 72px;
+    display: block;
+}
+
+.social a:hover {
+    color: #CC8956;
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 160px;
+}
+
+.bottom img {
+    width: 30%;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+.word-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.word-bottom div p {
+    color: #7F7F7F;
+    font-size: 1.4rem;
+}
+
+.mail {
+    text-decoration: underline;
+    margin-left: 4px;
+}
+
+.word-bottom a {
+    font-size: 1.4rem;
+    color: #7F7F7F;
+    margin-left: auto;
+    line-height: 200%;
+}
+
+/*----------------------------------------------- RWD */
+/*----------------------------------------------- RWD 1200*/
+@media screen and (max-width: 1200px) {
+
+    /*---------------------------------- event */
+    .event li {
+        width: 70vw;
+    }
+
+    /*---------------------------------- about */
+    .about article {
+        margin-left: 72px;
+    }
+
+    /*---------------------------------- contact */
+    .contact h1 {
+        font-size: 3.2rem;
+    }
+
+    .contact .btn-contact {
+        width: 40vw;
+    }
+}
+
+/*----------------------------------------------- RWD 992*/
+@media screen and (max-width: 992px) {
+
+    /*---------------------------------- 漢堡選單 */
+    .nav2 {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    .nav2 .menu-list a {
+        margin-left: 0;
+    }
+
+    .nav3 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav4 {
+        width: 70%;
+        padding-bottom: 40px;
+    }
+
+    .nav4 p {
+        font-size: 1.6rem;
+    }
+
+    .nav4 a {
+        font-size: 1.6rem;
+    }
+
+    .nav5 {
+        margin-left: 0;
+        width: 100%;
+
+        border-top: 0.5px solid #d1d1d1;
+        padding-top: 10px;
+    }
+
+    /*---------------------------------- header */
+    .top ul {
+        width: 55%;
+    }
+
+    .banner h5 {
+        font-weight: bold;
+    }
+
+    /*---------------------------------- event */
+    .event h4 {
+        font-size: 1.8rem;
+    }
+
+    /*---------------------------------- article */
+    .article article {
+        height: 340px;
+        width: 340px;
+
+        left: 4vw;
+        bottom: 4vw;
+        top: auto;
+    }
+
+    .article h2 {
+        font-size: 2.2rem;
+    }
+
+    .article a {
+        margin-left: 12px;
+    }
+
+    /*---------------------------------- about */
+    .about {
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .about div {
+        width: auto;
+        height: 110vh;
+        opacity: .8;
+    }
+
+    .about article {
+        width: calc(100% - 40px);
+        position: absolute;
+        z-index: 1;
+        left: 40px;
+        right: 40px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: fit-content;
+
+        background-color: #ffffff84;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    /*---------------------------------- contact */
+    .contact .btn-contact {
+        width: 50vw;
+    }
+
+    /*---------------------------------- footer */
+    .bottom {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .word-bottom {
+        width: 100%;
+        margin-bottom: 160px;
+    }
+
+    .bottom img {
+        width: 40%;
+    }
+
+    .word-bottom {
+        align-items: flex-start;
+    }
+
+}
+
+/*----------------------------------------------- RWD 768*/
+@media screen and (max-width: 768px) {
+
+    /*---------------------------------- header */
+    .top ul {
+        display: none;
+    }
+
+    .banner h5 {
+        letter-spacing: .5em;
+    }
+
+    .header .logo {
+        bottom: -10px;
+    }
+
+    /*---------------------------------- event */
+    .event h4 {
+        font-size: 1.6rem;
+    }
+
+    /*---------------------------------- article */
+    .article .img-article {
+        width: 70vw;
+        height: 50vh;
+        margin-bottom: 20vh;
+        margin-left: 10vw;
+    }
+
+    .article>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article a {
+        align-self: flex-end;
+        margin-right: 5vw;
+    }
+
+    .article article {
+        bottom: 5vh;
+    }
+
+}
+
+/*----------------------------------------------- RWD 576*/
+@media screen and (max-width: 576px) {
+
+    /*---------------------------------- 漢堡選單 */
+    .btn-menu {
+        padding: 0 40px 20px;
+    }
+
+    .nav2 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .nav2 .menu-list a {
+        font-size: 2.4rem;
+        line-height: 35px;
+    }
+
+    .nav4 {
+        width: 100%;
+    }
+
+    .nav4 p {
+        font-size: 1.4rem;
+    }
+
+    .nav4 a {
+        font-size: 1.4rem;
+    }
+
+    .nav-social {
+        flex-direction: column;
+    }
+
+    .nav-social li {
+        margin-right: 15px;
+    }
+
+    .nav-social a {
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    .nav5>a {
+        font-size: 1.2rem;
+    }
+
+    /*---------------------------------- body */
+    .fa-bars-staggered {
+        left: 40px;
+    }
+
+    /*---------------------------------- header */
+    .top {
+        padding: 0 40px;
+    }
+
+    .banner {
+        margin: 0 40px;
+        width: calc(100% - 80px);
+    }
+
+    .banner a {
+        display: none;
+    }
+
+    .banner i {
+        display: block;
+        line-height: 60px;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .header .logo {
+        left: 40px;
+    }
+
+    /*---------------------------------- event */
+    .event ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event li {
+        width: 90vw;
+    }
+
+    /*---------------------------------- article */
+    .article .img-article {
+        margin-bottom: 35vh;
+        width: 75vw;
+        height: 45vh;
+        align-self: flex-end;
+        overflow: hidden;
+    }
+
+    .article img {
+        border-radius: 0;
+        transform: scale(1.2) translate(0, 10%);
+    }
+
+    .article a {
+        margin-right: 40px;
+    }
+
+    .article article {
+        left: 0;
+        border-radius: 0 10px 10px 0;
+    }
+
+    /*---------------------------------- contact */
+    .contact {
+        padding: 40px;
+        height: 75vh;
+    }
+    
+    .contact .btn-contact {
+        width: 85vw;
+    }
+
+    /*---------------------------------- footer */
+    .menu {
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+
+    .menu li:last-child {
+        margin-top: -150px;
+    }
+
+    .social {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .social a {
+        line-height: 30px;
+    }
+
+    hr:nth-last-of-type(2) {
+        display: none;
+    }
+
+    hr:nth-last-of-type(1) {
+        display: block;
+    }
+
+    .word-bottom div p,
+    .word-bottom a {
+        font-size: 1.2rem;
+        letter-spacing: 0.1em;
+    }
+
+    .word-bottom div {
+        width: 60%;
+    }
+}
+
+/*----------------------------------------------- RWD 440*/
+@media screen and (max-width: 440px) {
+
+    /*---------------------------------- 漢堡選單 */
+    .btn-menu {
+        padding: 0 20px 20px;
+    }
+
+    .nav2 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nav4 {
+        padding-bottom: 30px;
+    }
+
+    /*---------------------------------- body */
+    .fa-bars-staggered {
+        left: 20px;
+    }
+
+    /*---------------------------------- header */
+    .top {
+        padding: 0 20px;
+    }
+
+    .banner {
+        margin: 0 20px;
+        width: calc(100% - 40px);
+    }
+
+    .header .logo {
+        left: 20px;
+    }
+
+    /*---------------------------------- event */
+    .event ul {
+        gap: 40px;
+    }
+
+    .event .img-event {
+        height: 300px;
+    }
+
+    /*---------------------------------- article */
+    .article a {
+        margin-right: 20px;
+    }
+
+    /*---------------------------------- footer */
+    footer {
+        padding: 80px 40px 60px;
+    }
+
+    .mail {
+        word-break: break-all;
+    }
+}

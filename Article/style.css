@@ -1,4 +1,4 @@
-@import url(../../reset.css);
+@import url(../reset.css);
 
 
 html {
@@ -199,7 +199,7 @@ p {font-size: 1.4rem;}
 }
 
 .top {
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: flex-end;
     column-gap: 18vw;
@@ -238,31 +238,111 @@ main {
     margin-top: 160px;
 }
 
-/*---------------------------------- contact */
-
-.about .logo-c {
-    position: sticky;
-    top: 256px;
-    margin: 0 auto 60px;
-    width: 40vw;
-    z-index: -1;
+/*---------------------------------- title */
+.title {
+    margin: 0 135px 80px;
 }
 
-.logo-color {
+.title-pic {
     width: 100%;
+    overflow: hidden;
 }
 
-.about h1 {
+.title-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    object-fit: cover;
+}
+
+.title-word {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.title-left h1 {
+    stop-color: #020F1A;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.title-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    gap: 28px;
+    width: 30vw;
+}
+.title-block-long {
+    width: 200px;
+ }
+
+.title-block {
+    width: 150px;
+ }
+
+.gray {
+    color: #7F7F7F;
+ }
+
+.black {
     color: #020F1A;
     font-weight: bold;
-    margin-left: 135px;
+ }
+
+/*---------------------------------- content */
+
+.event-content {
+    margin: 0 135px;
+}  
+
+.content-title b {
+    color: #020F1A;
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 
-.about h6 {
+.content-title {
+    color: #020F1A;
+    margin-bottom: 80px;
+}
+
+.float-image {
+    width: 30vw;
+    float: left;
+    margin-right: 60px;    
+    margin-bottom: 60px;
+}
+
+.float-image img{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;    
+}
+
+
+
+.content-word {
+    color:#7F7F7F;
+    margin-bottom: 60px;
+}
+
+
+.content-word b {
     color: #7F7F7F;
-    width: 35vw;
-    margin-left: auto;
-    margin-right: 135px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+
+/*---------------------------------- picture */
+
+.picture {
+    clear: both;
 }
 
 .pic {
@@ -286,135 +366,71 @@ main {
     border-radius: 10px;
 }
 
-
-/*---------------------------------- content */
-.about-content{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-    padding: 0 135px 160px;
-}
-
-.left-content div {
-    position: sticky;
-    top: 80px;
-}
-
-.left-content h1 {
-    font-weight: bold;
-}
-
-.style-pic {
-    width: 320px;
-    height: 440px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-top: 80px;
-} 
-
-.style-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} 
-
-.right-content {
-    width: 50vw;
-    margin-top: 140px;
-}
-
-.right-content hr {
-    margin: 60px 0;
+.picture hr {
     border: 1px solid #d1d1d1;
 }
 
-.aboutus, .style {
-    padding: 0 28px;
-}
-
-.style h3 {
-    margin-bottom: 28px;
-    color: #020F1A;
-}
-
-.aboutus p, .style p {
-    color: #7F7F7F;
-}
-
-/*---------------------------------- contact */
-.contact {
-    background-image: url(../../assets/bgi/contact_bgi-min.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-    /* opacity: .8; */
-    height: 70vh;
-    padding-top: 10vh;
-}
-
-.contact .btn-contact {
-    text-decoration: none;
-    display: block;
-    height: 60vh;
-    width: 30vw;
-    background-color: #FBF5EF;
-    border-radius: 10px;
-    margin: auto;
-    padding: 44px;
-    box-sizing: border-box;
-
+/*---------------------------------- next */
+.next {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
+    margin: 28px 135px 0;
 }
 
-.contact h1 {
-    color: #020F1A;
-    line-height: 48px;
-    font-size: 36px;
+.next-left a{
+    color: #7F7F7F;
+    line-height: 200%;
+    font-size: 1.4rem;
     font-weight: bold;
-    align-self: flex-start;
-
-    background-image: linear-gradient(to right, #CC8956, #CC8956);
-    background-repeat: no-repeat;
-    background-position: right bottom;     /* 固定在右邊，才會從右邊離開 */
-    background-size: 0% 2px;
-    transition: background-size 0.4s ease-out;   /* 補間動畫執行的方式，寫在這邊，離開時才會也有補間效果 */
+    display: block;
+    margin-top: 60px;
 }
 
-.btn-contact:hover h1{
-    /* 將寬度從 0% 變為 100%，線條就會從左邊滑出填滿整個文字寬度 */
-    background-size: 100% 2px; 
-    background-position: left bottom;
+.next-right {
+    width: 70vw;
+    text-decoration: none;
 }
 
-.contact .img-contact {
-    width: 120px;
-    height: 200px;
-    align-self: end;
-    margin-bottom: 5vh;
+.next-right h3{
+    color: #020F1A;
+    font-weight: 600;
 }
 
-.contact img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-}
-
-.contact div+div {
+.block {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.contact p {
+.block h4 {
     color: #7F7F7F;
 }
 
-.contact i {
-    color: #020F1A;
-    font-size: 2rem;
+.block span {
+    margin-top: 5px;
 }
+
+.block span span:nth-child(2) {
+    margin-right: 20px;
+}
+
+
+.next-pic {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0 ;
+    margin-top: 28px;
+}
+
+.next-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center -80px;
+}
+
 
 /*---------------------------------- footer */
 
