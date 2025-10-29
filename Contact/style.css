@@ -236,7 +236,7 @@ p {font-size: 1.4rem;}
 main {
     display: flex;
     justify-content: space-between;
-    margin-top: 160px;
+    margin-top: 160px; 
     padding: 0 135px 160px;
 }
 

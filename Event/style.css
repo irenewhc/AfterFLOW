@@ -235,12 +235,11 @@ p {font-size: 1.4rem;}
 
 /*---------------------------------- main */
 main {
-    margin: 160px 0;
+    margin: 160px 135px;
 }
 
 /*---------------------------------- type */
 .type {
-    margin: 0 135px 160px;
     display: flex;
     align-items: center;
 }
@@ -256,7 +255,6 @@ main {
     font-size: 2rem;
     margin-right: 16px;
     cursor: pointer;
-
 }
 
 .type h2 {
@@ -268,11 +266,8 @@ main {
 /*---------------------------------- event */
 
 .event {
-    width: calc(100%-135px);
-    margin: 160px 135px 0;
-
+    margin-top: 160px;
     overflow: hidden;
-
 }
 
 .event ul {
@@ -288,7 +283,7 @@ main {
 /* event img ----------------------------------*/
 .event li a:first-child {
     display: block;
-    height: 60vh;
+    height: 55vh;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -480,7 +475,16 @@ hr:nth-last-of-type(1) {
 
 /*----------------------------------------------- RWD */
 /*----------------------------------------------- RWD 1200*/
-@media screen and (max-width: 1200px){}
+@media screen and (max-width: 1200px){
+    /*---------------------------------- main */
+    main {
+    margin: 160px 80px;
+    }
+    /*---------------------------------- event */
+    .event ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 /*----------------------------------------------- RWD 992*/
 @media screen and (max-width: 992px){
     /*---------------------------------- 漢堡選單 */
@@ -528,6 +532,25 @@ hr:nth-last-of-type(1) {
         width: 55%;  
     }
 
+    /*---------------------------------- main */
+    main {
+        margin-top: 100px;
+    }
+
+    /*---------------------------------- event */
+
+    .event {
+        margin-top: 100px;
+    }
+
+    .event ul {
+        margin-bottom: 100px;
+    }
+
+    .event li a:first-child {
+       height: 40vh; 
+    }
+
     /*---------------------------------- footer */
     .bottom {
         flex-direction: column-reverse;
@@ -553,6 +576,13 @@ hr:nth-last-of-type(1) {
     /*---------------------------------- header */
     .top ul {
         display: none;
+    }
+}
+
+@media screen and (max-width: 720px){
+    /*---------------------------------- event */
+    .event ul {
+        grid-template-columns: 1fr;
     }
 }
 /*----------------------------------------------- RWD 576*/
@@ -610,6 +640,21 @@ hr:nth-last-of-type(1) {
     /*---------------------------------- header */
     .top {
         padding: 0 40px;
+    }
+
+    /*---------------------------------- main */
+    main {
+        margin: 80px 40px 160px;
+    }
+
+    /*---------------------------------- event */
+
+    .event {
+        margin-top: 80px;
+    }
+
+    .event ul {
+        margin-bottom: 80px;
     }
 
     /*---------------------------------- footer */
@@ -673,6 +718,21 @@ hr:nth-last-of-type(1) {
     /*---------------------------------- header */
     .top {
         padding: 0 20px;
+    }
+
+    /*---------------------------------- main */
+    main {
+        margin-top: 60px;
+    }
+
+    /*---------------------------------- event */
+
+    .event {
+        margin-top: 60px;
+    }
+
+    .event ul {
+        margin-bottom: 60px;
     }
 
     /*---------------------------------- footer */
