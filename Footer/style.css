@@ -1,0 +1,208 @@
+@import url(../../reset.css);
+
+
+html {
+    font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+    font-size: 62.5%;               /* 預設字級調整為10px */
+    letter-spacing: 0.2em;
+    
+    background-color: #fff;       /* 讓漢堡選單在白底時變黑色 */
+}
+
+h1, h2, h3, h4, h5, h6, p {line-height: 200%;}
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 2.2rem;}
+h4 {  font-size: 2rem;}
+h5 {font-size: 1.8rem;}
+h6 {font-size: 1.6rem;}
+p {font-size: 1.4rem;}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*---------------------------------- footer */
+
+footer {
+    background-color: #F0F9FF;
+    padding: 80px 60px 60px;
+}
+
+hr {
+    border: 0.5px solid #d1d1d1;
+}
+
+hr:nth-last-of-type(1) {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    padding: 10px 0;
+}
+
+.menu li {
+    margin-right: 15px;
+}
+
+.menu li:last-child {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.menu a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #020F1A;
+    line-height: 30px;
+    display: inline-block;
+
+    background-image: linear-gradient(to right, #020F1A, #020F1A);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /* 固定在右邊，才會從右邊離開 */
+    background-size: 0% 2px;
+    transition: background-size 0.4s ease-out;
+}
+
+.menu a:hover {
+    /* 將寬度從 0% 變為 100%，線條就會從左邊滑出填滿整個文字寬度 */
+    background-size: 100% 2px;
+    background-position: left bottom;
+}
+
+.social {
+    display: flex;
+}
+
+.social li {
+    margin-right: 30px;
+}
+
+.social a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #7F7F7F;
+    line-height: 72px;
+    display: block;
+}
+
+.social a:hover {
+    color: #CC8956;
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 160px;
+}
+
+.bottom img {
+    width: 30%;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+.word-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.word-bottom div p {
+    color: #7F7F7F;
+    font-size: 1.4rem;
+}
+
+.mail {
+    text-decoration: underline;
+    margin-left: 4px;
+}
+
+.word-bottom a {
+    font-size: 1.4rem;
+    color: #7F7F7F;
+    margin-left: auto;
+    line-height: 200%;
+}
+/*----------------------------------------------- RWD */
+/*----------------------------------------------- RWD 992*/
+@media screen and (max-width: 992px){
+
+    /*---------------------------------- footer */
+    .bottom {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .word-bottom {
+        width: 100%;
+        margin-bottom: 160px;
+    }
+
+    .bottom img {
+        width: 40%;
+    }
+
+    .word-bottom {
+        align-items: flex-start;
+    }
+
+}
+
+/*----------------------------------------------- RWD 576*/
+@media screen and (max-width: 576px){
+   
+    /*---------------------------------- footer */
+    .menu {
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+
+    .menu li:last-child {
+        margin-top: -150px;
+    }
+
+    .social {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .social a {
+        line-height: 30px;
+    }
+
+    hr:nth-last-of-type(2) {
+        display: none;
+    }
+
+    hr:nth-last-of-type(1) {
+        display: block;
+    }
+
+    .word-bottom div p,
+    .word-bottom a {
+        font-size: 1.2rem;
+        letter-spacing: 0.1em;
+    }
+
+    .word-bottom div {
+        width: 60%;
+    }
+
+}
+/*----------------------------------------------- RWD 440*/
+@media screen and (max-width: 440px){
+
+    /*---------------------------------- footer */
+    footer {
+        padding: 80px 40px 60px;
+    }
+
+    .mail {
+        word-break: break-all;
+    }
+} 

@@ -240,7 +240,6 @@ main {
     padding: 0 135px 160px;
 }
 
-
 /*---------------------------------- contact */
 .contact {
     width: 35vw;
@@ -577,16 +576,18 @@ hr:nth-last-of-type(1) {
     /*---------------------------------- contact */
     .contact {
         width: 100%;
+        border-bottom: 1px solid #d1d1d1;
+        padding-bottom: 50px;
     }
 
     /*---------------------------------- form */
     .form {
         width: 100%;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .btn {
-    margin-bottom: 52px;
+        margin-bottom: 52px;
     }
 
     /*---------------------------------- footer */
@@ -725,7 +726,7 @@ hr:nth-last-of-type(1) {
 }
 /*----------------------------------------------- RWD 440*/
 @media screen and (max-width: 440px){
-     /*---------------------------------- 漢堡選單 */
+    /*---------------------------------- 漢堡選單 */
     .btn-menu {
         padding: 0 20px 20px;
     }
