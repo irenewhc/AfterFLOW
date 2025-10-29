@@ -1,4 +1,4 @@
-@import url(../../reset.css);
+@import url(../reset.css);
 
 
 html {
@@ -577,7 +577,7 @@ hr:nth-last-of-type(1) {
     .contact {
         width: 100%;
         border-bottom: 1px solid #d1d1d1;
-        padding-bottom: 50px;
+        padding: 0 0 50px 0;
     }
 
     /*---------------------------------- form */
