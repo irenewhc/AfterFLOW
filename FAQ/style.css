@@ -217,10 +217,10 @@ body>.fa-chevron-up {
 
 .btn-contact{
     font-size: 1.8rem;
-    color: #fff;
+    color: #020F1A;
     text-decoration: none;
     line-height: 25px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #020F1A;
     display: block;
 }
 
@@ -233,7 +233,7 @@ body>.fa-chevron-up {
 
 .top ul a {
     font-size: 1.8rem;
-    color: #fff;
+    color: #020F1A;
     text-decoration: none;
     line-height: 60px;
     display: block;
