@@ -238,12 +238,11 @@ main {
     margin-top: 160px;
 }
 
-/*---------------------------------- contact */
-
+/*---------------------------------- about-content */
 .about .logo-c {
     position: sticky;
     top: 256px;
-    margin: 0 auto 60px;
+    margin: 0 auto;
     width: 40vw;
     z-index: -1;
 }
@@ -264,6 +263,9 @@ main {
     margin-left: auto;
     margin-right: 135px;
 }
+.about h6:nth-of-type(1) {
+    margin-top: 60px;
+}
 
 .pic {
     display: flex;
@@ -275,7 +277,7 @@ main {
 
 .event-pic {
     flex-shrink: 0;
-    width: 368px;
+    width: 340px;
     height: 416px;
 }
 
@@ -288,11 +290,10 @@ main {
 
 
 /*---------------------------------- content */
-.about-content{
+.about-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
-    padding: 0 135px 160px;
+    padding: 80px 135px 160px;
 }
 
 .left-content div {
@@ -346,22 +347,23 @@ main {
     background-image: url(../assets/bgi/contact_bgi-min.jpg);
     background-size: cover;
     background-position: 50% 50%;
-    /* opacity: .8; */
-    height: 70vh;
-    padding-top: 10vh;
+    height: 80vh;
+    padding: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact .btn-contact {
     text-decoration: none;
     display: block;
-    height: 60vh;
     width: 30vw;
+    aspect-ratio: 2/2.2;
     background-color: #FBF5EF;
     border-radius: 10px;
-    margin: auto;
     padding: 44px;
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -370,20 +372,22 @@ main {
 .contact h1 {
     color: #020F1A;
     line-height: 48px;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: bold;
     align-self: flex-start;
 
     background-image: linear-gradient(to right, #CC8956, #CC8956);
     background-repeat: no-repeat;
-    background-position: right bottom;     /* 固定在右邊，才會從右邊離開 */
+    background-position: right bottom;
+    /* 固定在右邊，才會從右邊離開 */
     background-size: 0% 2px;
-    transition: background-size 0.4s ease-out;   /* 補間動畫執行的方式，寫在這邊，離開時才會也有補間效果 */
+    transition: background-size 0.4s ease-out;
+    /* 補間動畫執行的方式，寫在這邊，離開時才會也有補間效果 */
 }
 
-.btn-contact:hover h1{
+.btn-contact:hover h1 {
     /* 將寬度從 0% 變為 100%，線條就會從左邊滑出填滿整個文字寬度 */
-    background-size: 100% 2px; 
+    background-size: 100% 2px;
     background-position: left bottom;
 }
 
@@ -391,6 +395,7 @@ main {
     width: 120px;
     height: 200px;
     align-self: end;
+    margin-top: 1vh; 
     margin-bottom: 5vh;
 }
 
@@ -525,7 +530,30 @@ hr:nth-last-of-type(1) {
 
 /*----------------------------------------------- RWD */
 /*----------------------------------------------- RWD 1200*/
-@media screen and (max-width: 1200px){}
+@media screen and (max-width: 1200px){
+    /*---------------------------------- contact */
+    .contact h1 {
+        font-size: 3.2rem;
+    }
+
+    .contact .btn-contact {
+        width: 40vw;
+    }
+
+    /*---------------------------------- about-word */
+    .about h1 {
+        margin-left: 80px;
+    }
+
+    .about h6{
+        margin-right: 80px;
+    }
+
+    /*---------------------------------- content */
+    .about-content {
+        padding: 80px 80px 160px;
+    }
+}
 /*----------------------------------------------- RWD 992*/
 @media screen and (max-width: 992px){
     /*---------------------------------- 漢堡選單 */
@@ -573,6 +601,22 @@ hr:nth-last-of-type(1) {
         width: 55%;  
     }
 
+    /*---------------------------------- about */
+    main {
+        margin-top: 100px;
+    }
+    
+    /*---------------------------------- content */
+    .style-pic {
+        width: 220px;
+        height: 300px;
+    }
+
+    /*---------------------------------- contact */
+    .contact .btn-contact {
+        width: 50vw;
+    }
+
     /*---------------------------------- footer */
     .bottom {
         flex-direction: column-reverse;
@@ -599,10 +643,37 @@ hr:nth-last-of-type(1) {
     .top ul {
         display: none;
     }
+
+    /*---------------------------------- about-content */
+    .about h6 {
+        width: 100%;
+        padding: 0 80px;
+        margin-right: 0;
+    }
+
+    .about h6:nth-of-type(1) {
+        margin-top: 140px;
+    }    
+
+    .about .logo-c {
+        top: 320px;
+        margin: 0 auto;
+    }
+
+    .pic {
+        padding: 80px 0 20px;
+    }
+
+    /*---------------------------------- content */
+    .style-pic {
+        width: 180px;
+        height: 240px;
+    }
+
 }
 /*----------------------------------------------- RWD 576*/
 @media screen and (max-width: 576px){
-     /*---------------------------------- 漢堡選單 */
+    /*---------------------------------- 漢堡選單 */
     .btn-menu {
         padding: 0 40px 20px;
     }
@@ -657,6 +728,53 @@ hr:nth-last-of-type(1) {
         padding: 0 40px;
     }
 
+    /*---------------------------------- about */
+    main {
+        margin-top: 80px;
+    }
+
+    /*---------------------------------- about-content */
+    .about h1 {
+        margin-left: 40px;
+    }
+    .about h6 {
+        padding: 0 40px;
+    }
+
+    .aboutus, .style {
+        padding: 0 8px;
+    }
+
+    /*---------------------------------- content */
+    .about-content {
+        flex-direction: column;
+        padding: 80px 40px 160px;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+
+    .style-pic {
+        width: 100%;
+        height: 440px;
+        margin: 80px auto 0;
+    }
+
+    .right-content {
+        margin-top: 80px;
+    }
+
+    /*---------------------------------- contact */
+    .contact {
+        padding: 40px;
+        height: 75vh;
+    }
+    
+    .contact .btn-contact {
+        width: 85vw;
+    }
+
     /*---------------------------------- footer */
     .menu {
         flex-direction: column;
@@ -676,11 +794,11 @@ hr:nth-last-of-type(1) {
         line-height: 30px;
     }
 
-    hr:nth-last-of-type(2) {
+    .social hr:nth-last-of-type(2) {
         display: none;
     }
 
-    hr:nth-last-of-type(1) {
+    .social hr:nth-last-of-type(1) {
         display: block;
     }
 
@@ -719,6 +837,19 @@ hr:nth-last-of-type(1) {
     .top {
         padding: 0 20px;
     }
+
+    /*---------------------------------- about */
+    main {
+        margin-top: 60px;
+    }
+
+    /*---------------------------------- about-content */
+    .about .logo-c {
+        top: 280px;
+    }
+
+    /*---------------------------------- content */
+
 
     /*---------------------------------- footer */
     footer {
