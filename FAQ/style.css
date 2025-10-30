@@ -242,7 +242,7 @@ body>.fa-chevron-up {
 /*搜尋框 ----------------------------------*/
 
 .search {
-    width: 360px;
+    width: 340px;
     height: 48px;
     margin: 20vh auto;
     background-color: #fff;
@@ -250,7 +250,6 @@ body>.fa-chevron-up {
     border-radius: 10px;
 
     padding: 10px;
-    /* box-sizing: border-box; */
 }
 
 .search-content {
@@ -277,7 +276,7 @@ body>.fa-chevron-up {
     font-family:  "Noto Sans TC", "Noto Sans", sans-serif;
     color: #020F1A;
     border: 0;
-    width: 300px;  
+    width: 280px;  
 }
 
 .search input[type="search"] {
@@ -322,7 +321,7 @@ aside h1 {
     line-height: 48px;
     border: 1px solid #d1d1d1;
     border-radius: 10px;
-    margin: 16px 16px 16px 0;
+    margin: 16px 16px 0 0;
 }
 
 .tab-btn:hover {
@@ -366,6 +365,10 @@ aside h1 {
     padding: 0 28px 28px;
     text-decoration: none;
     color: #7F7F7F;
+}
+
+.qword {
+    margin-right: 16px;
 }
 
 .qa hr {
@@ -513,7 +516,12 @@ footer hr:nth-last-of-type(1) {
 
 /*----------------------------------------------- RWD */
 /*----------------------------------------------- RWD 1200*/
-@media screen and (max-width: 1200px){}
+@media screen and (max-width: 1200px){
+    /*---------------------------------- main */
+    .main {
+        margin: 160px 80px;
+    }
+}
 /*----------------------------------------------- RWD 992*/
 @media screen and (max-width: 992px){
     /*---------------------------------- 漢堡選單 */
@@ -561,6 +569,31 @@ footer hr:nth-last-of-type(1) {
         width: 55%;  
     }
 
+    .header {
+        background-size: 150%;
+        background-position: center -60px;
+    }
+
+    /*---------------------------------- main */
+    .main {
+        margin-top: 100px;
+    }
+
+    /*asids ----------------------------------*/
+    aside {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 60px;
+    }
+
+    aside h1 {
+        margin-bottom: 44px;
+    }
+
+    .tab-btn {
+        margin: 16px 8px 0 0;
+    }
+
     /*---------------------------------- footer */
     .bottom {
         flex-direction: column-reverse;
@@ -587,6 +620,12 @@ footer hr:nth-last-of-type(1) {
     .top ul {
         display: none;
     }
+
+    .header {
+        background-size: 200%;
+        background-position: center 0px;
+    }
+
 }
 /*----------------------------------------------- RWD 576*/
 @media screen and (max-width: 576px){
@@ -645,6 +684,19 @@ footer hr:nth-last-of-type(1) {
         padding: 0 40px;
     }
 
+    /*---------------------------------- main */
+    .main {
+        margin: 80px 40px 160px;
+    }
+    /*article ----------------------------------*/
+    .q {
+        padding: 0 14px 28px;
+    }
+    
+    .ans{
+        padding: 14px;
+    }
+    
     /*---------------------------------- footer */
     .menu {
         flex-direction: column;
@@ -664,11 +716,11 @@ footer hr:nth-last-of-type(1) {
         line-height: 30px;
     }
 
-    hr:nth-last-of-type(2) {
+    footer>hr:nth-last-of-type(2) {
         display: none;
     }
 
-    hr:nth-last-of-type(1) {
+    footer>hr:nth-last-of-type(1) {
         display: block;
     }
 
@@ -706,6 +758,15 @@ footer hr:nth-last-of-type(1) {
     /*---------------------------------- header */
     .top {
         padding: 0 20px;
+    }
+
+    .header {
+        background-size: 250%;
+    }
+
+    /*---------------------------------- main */
+    .main {
+        margin-top: 60px;
     }
 
     /*---------------------------------- footer */
