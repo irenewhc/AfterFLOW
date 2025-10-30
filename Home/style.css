@@ -508,7 +508,7 @@ p {font-size: 1.4rem;}
 
 /*---------------------------------- contact */
 .contact {
-    background-image: url(../../assets/bgi/contact_bgi-min.jpg);
+    background-image: url(../assets/bgi/contact_bgi-min.jpg);
     background-size: cover;
     background-position: 50% 50%;
     height: 80vh;

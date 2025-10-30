@@ -196,7 +196,7 @@ body>.fa-chevron-up {
 
 .header {
     height: 60vh;
-    background-image: url(../../assets/bgi/faq.jpg);
+    background-image: url(../assets/bgi/faq.jpg);
     background-size: cover;
     background-position: center -260px;
     background-repeat: no-repeat;
