@@ -149,6 +149,10 @@ p {font-size: 1.4rem;}
     font-weight: bold;
 }
 
+.nav4 p:nth-of-type(3) {
+    text-align: justify;
+}
+
 .nav4 a {
     font-size: 1.2rem;
     color: #5d5d5d;
@@ -233,7 +237,7 @@ p {font-size: 1.4rem;}
     display: block;
 }
 
-/*---------------------------------- about */
+/*---------------------------------- main */
 main {
     margin-top: 160px;
 }
@@ -265,7 +269,7 @@ main {
 
 .title-left h1 {
     stop-color: #020F1A;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: bold;
 }
 
@@ -274,7 +278,7 @@ main {
     flex-wrap: wrap;
     justify-content: right;
     gap: 28px;
-    width: 30vw;
+    width: 40vw;
 }
 .title-block-long {
     width: 200px;
@@ -308,6 +312,7 @@ main {
 .content-title {
     color: #020F1A;
     margin-bottom: 80px;
+    text-align: justify;
 }
 
 .float-image {
@@ -324,13 +329,11 @@ main {
     display: block;    
 }
 
-
-
 .content-word {
     color:#7F7F7F;
     margin-bottom: 60px;
+    text-align: justify;
 }
-
 
 .content-word b {
     color: #7F7F7F;
@@ -338,24 +341,23 @@ main {
     font-size: 1.8rem;
 }
 
-
 /*---------------------------------- picture */
 
 .picture {
-    clear: both;
+    /* clear: both; */
 }
 
 .pic {
     display: flex;
     gap: 32px;
     justify-content: center;
-    padding: 80px 0;
+    padding: 80px 0 160px;
     overflow: hidden;
 }
 
 .event-pic {
     flex-shrink: 0;
-    width: 368px;
+    width: 340px;
     height: 416px;
 }
 
@@ -367,7 +369,8 @@ main {
 }
 
 .picture hr {
-    border: 1px solid #d1d1d1;
+    width: 90%;
+    border: 0.5px solid #d1d1d1;
 }
 
 /*---------------------------------- next */
@@ -411,10 +414,13 @@ main {
     margin-top: 5px;
 }
 
-.block span span:nth-child(2) {
+.block span span:nth-of-type(2) {
     margin-right: 20px;
 }
 
+.block span>br {
+    display: none;
+}
 
 .next-pic {
     width: 100%;
@@ -431,7 +437,6 @@ main {
     object-position: center -80px;
 }
 
-
 /*---------------------------------- footer */
 
 
@@ -440,11 +445,11 @@ footer {
     padding: 80px 60px 60px;
 }
 
-hr {
+footer>hr {
     border: 0.5px solid #d1d1d1;
 }
 
-hr:nth-last-of-type(1) {
+footer>hr:nth-last-of-type(1) {
     display: none;
 }
 
@@ -541,7 +546,24 @@ hr:nth-last-of-type(1) {
 
 /*----------------------------------------------- RWD */
 /*----------------------------------------------- RWD 1200*/
-@media screen and (max-width: 1200px){}
+@media screen and (max-width: 1200px){
+    /*---------------------------------- title */
+    .title {
+        margin: 0 80px 80px;
+    }
+
+    /*---------------------------------- content */
+
+    .event-content {
+        margin: 0 80px;
+    } 
+
+    /*---------------------------------- next */
+    .next {
+        margin: 28px 80px 0;
+    }
+
+}
 /*----------------------------------------------- RWD 992*/
 @media screen and (max-width: 992px){
     /*---------------------------------- 漢堡選單 */
@@ -589,6 +611,58 @@ hr:nth-last-of-type(1) {
         width: 55%;  
     }
 
+    /*---------------------------------- main */
+    main {
+        margin-top: 100px;
+    }
+
+    /*---------------------------------- title */
+    .title-left h1{
+        font-size: 2.4rem;
+    }
+    
+    .title-word h5 {
+        font-size: 1.4rem;
+    }
+    .title-right {
+        gap: 16px;
+        width: 298px;
+    }
+
+    .title-block-long {
+        width: 160px;
+    }
+
+    .title-block {
+        width: 110px;
+    }
+
+    /*---------------------------------- next */
+    .next-left a {
+        font-size: 1.2rem;
+    }
+
+    .next-right h3 {
+        font-size: 1.8rem;
+    }
+
+    .block h4 {
+        font-size: 1.6rem;
+    }
+
+    .block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .next-pic {
+        height: 180px;
+    }
+
+    .next-pic img {
+        object-position: center -20px;
+    }
+
     /*---------------------------------- footer */
     .bottom {
         flex-direction: column-reverse;
@@ -615,6 +689,47 @@ hr:nth-last-of-type(1) {
     .top ul {
         display: none;
     }
+
+    /*---------------------------------- title */
+    .title {
+        margin: 0 80px 40px;
+    }
+    
+    .title-word {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .title-right {
+        margin-top: 28px;
+        justify-content: space-between;
+        width: 100%;    
+    }
+
+    .title-block-long {
+        width: auto;
+    }
+
+    .title-block {
+        width: auto;
+    }
+
+    /*---------------------------------- content */
+    .content-title {
+        margin-bottom: 40px;
+    }
+
+    .float-image {
+        width: 35vw;
+        margin-right: 60px;    
+        margin-bottom: 40px;
+    }
+
+    .content-word {
+        margin-bottom: 40px;
+    }
+
 }
 /*----------------------------------------------- RWD 576*/
 @media screen and (max-width: 576px){
@@ -671,6 +786,53 @@ hr:nth-last-of-type(1) {
     /*---------------------------------- header */
     .top {
         padding: 0 40px;
+    }
+
+    /*---------------------------------- main */
+    main {
+        margin-top: 80px;
+    }
+
+    /*---------------------------------- title */
+    .title {
+        margin: 0 40px 80px;
+    }
+
+    .title-right {
+        justify-content: left;
+    }
+    .title-block-long {
+        width: 160px;
+    }
+
+    .title-block {
+        width: 110px;
+    }
+
+    /*---------------------------------- content */
+    .event-content {
+        margin: 0 40px;
+    } 
+    .float-image {
+        width: 100%;
+        margin-right: 0;   
+    }
+
+    /*---------------------------------- next */
+    .next {
+        margin: 28px 40px 0;
+    }
+
+    .next-pic {
+        height: 100px;
+    }
+
+    .next-pic img {
+        object-position: center -10px;
+    }
+
+    .block span>br {
+        display: block;
     }
 
     /*---------------------------------- footer */
@@ -734,6 +896,16 @@ hr:nth-last-of-type(1) {
     /*---------------------------------- header */
     .top {
         padding: 0 20px;
+    }
+
+    /*---------------------------------- main */
+    main {
+        margin-top: 60px;
+    }
+
+    /*---------------------------------- picture */
+    .pic {
+        padding: 60px 0 100px;
     }
 
     /*---------------------------------- footer */

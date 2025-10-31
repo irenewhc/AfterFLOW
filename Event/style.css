@@ -149,6 +149,10 @@ p {font-size: 1.4rem;}
     font-weight: bold;
 }
 
+.nav4 p:nth-of-type(3) {
+    text-align: justify;
+}
+
 .nav4 a {
     font-size: 1.2rem;
     color: #5d5d5d;
