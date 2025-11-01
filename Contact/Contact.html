@@ -100,26 +100,27 @@
 
         <section class="form">
             <div class="btn">
-                <a href="#" class="tab-btn active">改建諮詢</a>
-                <a href="#" class="tab-btn">加入我們</a>
-                <a href="#" class="tab-btn">合作邀約</a>
+                <button class="tab-btn active" data-tab="consult">改建諮詢</button>
+                <button class="tab-btn" data-tab="join">加入我們</button>
+                <button class="tab-btn" data-tab="invite">合作邀約</button>
             </div>
 
-            <form class="consult" action="#" method="POST">
+            <form class="table active consult" action="#" method="POST">
                 <div class="demands">
-                    <h6>——諮詢類型<span class="req">＊</span>（可複選）</h5>
-                    <label><input type="checkbox" name="demands" value="design" ><span class="word">設計</span></label>
-                    <label><input type="checkbox" name="demands" value="construction" ><span class="word">施工</span></label>
-                    <label><input type="checkbox" name="demands" value="license" ><span class="word">改建相關執照申請</span></label>
-                    <label><input type="checkbox" name="demands" value="other" ><span class="word">其他（請於「諮詢詳情」說明）</span></label>
+                    <h6>——諮詢類型<span class="req">＊</span></h5>
+                    <label><input type="radio" name="demands" value="design" ><span class="word">設計</span></label>
+                    <label><input type="radio" name="demands" value="construction" ><span class="word">施工</span></label>
+                    <label><input type="radio" name="demands" value="construction" ><span class="word">設計＋施工</span></label>
+                    <label><input type="radio" name="demands" value="license" ><span class="word">改建相關執照申請</span></label>
+                    <label><input type="radio" name="demands" value="other" ><span class="word">其他（請於「諮詢詳情」說明）</span></label>
                 </div>
                 <br>
                 <div class="space">
-                    <h6>——空間類型<span class="req">＊</span>（可複選）</h5>
-                    <label><input type="checkbox" name="space" value="house" ><span class="word">住宅</span></label>
-                    <label><input type="checkbox" name="space" value="business" ><span class="word">商業空間</span></label>
-                    <label><input type="checkbox" name="space" value="public" ><span class="word">公共空間</span></label>
-                    <label><input type="checkbox" name="space" value="other" ><span class="word">其他</span></label>
+                    <h6>——空間類型<span class="req">＊</span></h5>
+                    <label><input type="radio" name="space" value="house" ><span class="word">住宅</span></label>
+                    <label><input type="radio" name="space" value="business" ><span class="word">商業空間</span></label>
+                    <label><input type="radio" name="space" value="public" ><span class="word">公共空間</span></label>
+                    <label><input type="radio" name="space" value="other" ><span class="word">其他</span></label>
                 </div>
                 <br>
                 <div class="info">
@@ -148,11 +149,11 @@
             </form>
 
 
-            <form class="join" action="#" method="POST">
+            <form class="table join" action="#" method="POST">
                 <div class="demands">
                     <h6>——應徵職位<span class="req">＊</span></h5>
-                    <label><input type="checkbox" name="demands" value="architect" ><span class="word">建築設計</span></label>
-                    <label><input type="checkbox" name="demands" value="interior" ><span class="word">室內設計</span></label>
+                    <label><input type="radio" name="demands" value="architect" required><span class="word">建築設計</span></label>
+                    <label><input type="radio" name="demands" value="interior" required><span class="word">室內設計</span></label>
                 </div>
                 <br>
                 <div class="info">
@@ -181,12 +182,12 @@
             </form>
 
             
-            <form class="invite" action="#" method="POST">
+            <form class="table invite" action="#" method="POST">
                 <div class="demands">
-                    <h6>——合作類型<span class="req">＊</span>（可複選）</h5>
-                    <label><input type="checkbox" name="demands" value="business" ><span class="word">商業合作</span></label>
-                    <label><input type="checkbox" name="demands" value="public" ><span class="word">公益合作</span></label>
-                    <label><input type="checkbox" name="demands" value="other" ><span class="word">其他（請於「合作詳情」說明）</span></label>
+                    <h6>——合作類型<span class="req">＊</span></h5>
+                    <label><input type="radio" name="demands" value="business" required><span class="word">商業合作</span></label>
+                    <label><input type="radio" name="demands" value="public" required><span class="word">公益合作</span></label>
+                    <label><input type="radio" name="demands" value="other" required><span class="word">其他（請於「合作詳情」說明）</span></label>
                 </div>
                 <br>
                 <div class="info">
@@ -283,6 +284,35 @@
             })
 
         })
+
+        //切換區塊
+        $(function(){
+            $('.tab-btn').click(function(){
+
+                // 按鈕
+                $(this).addClass('active').siblings('.tab-btn').removeClass('active')
+
+
+                // 區塊
+                let tabName = $(this).data('tab');
+
+                $('.table').removeClass('active');
+                $('.table.' + tabName).addClass('active');
+
+            })
+        })
+
+        //表單送出alert
+        $(function(){
+            $('form').submit(function(e){
+                e.preventDefault();
+                alert('表單送出成功!');
+                $('html, body').animate({ scrollTop: 0 }, 500)
+                $(this)[0].reset(); // 取得原生 DOM 元素後 reset
+            });
+        })
+
+
     </script>
 
 

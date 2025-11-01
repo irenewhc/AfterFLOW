@@ -279,8 +279,14 @@ main {
 }
 
 .consult {
-   /* display: none;  */
+   display: none; 
 }
+
+/*區塊切換效果 ----------------------------------*/
+.table.active{
+    display: block;
+}
+/*----------------------------------*/
 
 
 .form {
@@ -293,17 +299,18 @@ main {
 }
 
 .tab-btn {
-    text-decoration: none;
     font-size: 1.6rem;
     color: #020F1A;
     display: inline-block;
-    text-align: center;
     width: 152px;
     line-height: 48px;
     border: 1px solid #d1d1d1;
     border-radius: 10px;
-    margin-right: 16px;
-    margin-bottom: 16px;
+    margin: 16px 16px 0 0;
+
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    background-color: #fff;
 }
 
 .tab-btn:hover {
@@ -312,11 +319,12 @@ main {
     border: 1px solid #d1d1d100;
 }
 
+/*按鈕切換效果 ----------------------------------*/
 .tab-btn.active {
     background-color: #E3C5A4;
-    color: #020F1A;
-    border: 1px solid #d1d1d100;
+    border: 1px solid transparent;
 }
+/*----------------------------------*/
 
 .demands label, .space label {
     color: #7F7F7F;
