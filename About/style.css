@@ -351,7 +351,7 @@ main {
     background-image: url(../assets/bgi/contact_bgi-min.jpg);
     background-size: cover;
     background-position: 50% 50%;
-    height: 80vh;
+    height: 85vh;
     padding: 100px;
     
     display: flex;
@@ -361,7 +361,7 @@ main {
 
 .contact .btn-contact {
     text-decoration: none;
-    display: block;
+    /* display: block; */
     width: 30vw;
     aspect-ratio: 2/2.2;
     background-color: #FBF5EF;
@@ -371,6 +371,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    box-shadow: none;
 }
 
 .contact h1 {
@@ -851,9 +853,6 @@ hr:nth-last-of-type(1) {
     .about .logo-c {
         top: 280px;
     }
-
-    /*---------------------------------- content */
-
 
     /*---------------------------------- footer */
     footer {
