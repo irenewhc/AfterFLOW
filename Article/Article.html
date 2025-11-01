@@ -26,6 +26,41 @@
 
     <i class="fa-solid fa-chevron-up"></i>
 
+     <!-- 漢堡選單 -->
+    <nav class="btn-menu">
+        <div class="nav1">
+            <i class="fa-solid fa-xmark"></i>
+            <a class="btn-logo" href="../Home/index.html"><img src="../assets/LOGO/LOGO_B.png" alt=""></a>
+            <a  href="../Contact/Contact.html">Contact</a></li>
+        </div>
+        <div class="nav2">
+            <ul class="menu-list">
+                <li><a href="../About/About.html">About</a></li>
+                <li><a href="../Partner/Partner.html">Partner</a></li>
+                <li><a href="../Article/Article.html">Article</a></li>
+                <li><a href="../Event/Event.html">Event</a></li>
+                <li><a href="../FAQ/FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="nav3">
+            <div class="nav4">
+                <p>- ABOUT -</p>
+                <br>
+                <p>AfterFLOW<br>關於時間延續與空間重生的命題</p>
+                <p>作為引導者，我們從「時光、場域再定義、減法」 出發，讓每寸空間都成為一位有層次感的敘事者，向過去致敬，為未來低語。</p>
+                <br>
+                <a href="../Contact/Contact.html">Share your story with us..</a>
+            </div>
+            <div class="nav5">
+                <ul class="nav-social">
+                    <li><a href="#">- Facebook</a></li>
+                    <li><a href="#">- Instagram</a></li>
+                </ul>
+                <a href="#">Privacy Policy</a>       
+            </div>
+        </div>
+    </nav>
+
     <!-- header -->
     <header class="header">
 
@@ -209,6 +244,21 @@
 
         </div>
     </footer>
+
+    <script>
+        //漢堡選單
+        $(function(){
+            $('.fa-bars-staggered').click(function(){
+                $('.btn-menu').slideToggle(100)
+            })
+        })
+
+        $(function(){
+            $('.fa-xmark').click(function(){
+                $('.btn-menu').slideToggle(100)
+            })
+        })
+    </script>
 
 
 </body>

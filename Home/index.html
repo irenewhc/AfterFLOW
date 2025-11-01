@@ -262,6 +262,24 @@
         </div>
     </footer>
 
+    <script>
+        //漢堡選單
+        $(function(){
+            $('.fa-bars-staggered').click(function(){
+                // $('.btn-menu').css('left', 0)
+                // $('.btn-menu').animate({left: '0'}, 100)
+                //$('.btn-menu').css('left', 0).slideToggle(100)
+                $('.btn-menu').slideToggle(100)
+            })
+        })
+
+        $(function(){
+            $('.fa-xmark').click(function(){
+                $('.btn-menu').slideToggle(100)
+            })
+        })
+    </script>
+
 
 
 </body>

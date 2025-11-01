@@ -253,14 +253,18 @@
 
 
     <script>
-        // fetch('./header.html')
-        //     .then(res => res.text())
-        //     .then(data => document.querySelector('header').innerHTML = data)
+        //漢堡選單
+        $(function(){
+            $('.fa-bars-staggered').click(function(){
+                $('.btn-menu').slideToggle(100)
+            })
+        })
 
-        // fetch('../Footer/Footer.html')
-        //     .then(res => res.text())
-        //     .then(data => document.querySelector('footer').innerHTML = data)
-
+        $(function(){
+            $('.fa-xmark').click(function(){
+                $('.btn-menu').slideToggle(100)
+            })
+        })
     </script>
 
 
