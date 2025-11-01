@@ -315,16 +315,18 @@ aside h1 {
     font-weight: bold;
 }
 .tab-btn {
-    text-decoration: none;
     font-size: 1.6rem;
     color: #020F1A;
     display: inline-block;
-    text-align: center;
     width: 152px;
     line-height: 48px;
     border: 1px solid #d1d1d1;
     border-radius: 10px;
     margin: 16px 16px 0 0;
+
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    background-color: #fff;
 }
 
 .tab-btn:hover {
@@ -332,17 +334,16 @@ aside h1 {
     color: #020F1A;
     border: 1px solid #d1d1d100;
 }
-
+/*按鈕切換效果 ----------------------------------*/
 .tab-btn.active {
     background-color: #E3C5A4;
-    color: #020F1A;
-    border: 1px solid #d1d1d100;
+    border: 1px solid transparent;
 }
 
 /*article ----------------------------------*/
 
 .law {
-    /* display: none; */
+    display: none;
 }
 
 .structure {
@@ -368,6 +369,7 @@ aside h1 {
     padding: 0 28px 28px;
     text-decoration: none;
     color: #7F7F7F;
+    cursor: pointer;
 }
 
 .qword {
@@ -387,6 +389,22 @@ aside h1 {
 .ans {
     padding: 28px 56px;
     border-top: 1px solid #d1d1d1;
+    display: none;
+}
+
+/*區塊切換效果 ----------------------------------*/
+.qa.active{
+    display: block;
+}
+
+/*點擊後按鈕的效果 ----------------------------------*/
+
+.fa-chevron-down {
+    transition: transform 0.5s ease;
+}
+
+.fa-chevron-down.rotate {
+    transform: rotate(180deg);
 }
 
 /*連結效果 ----------------------------------*/

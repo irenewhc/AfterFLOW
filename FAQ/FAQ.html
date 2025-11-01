@@ -90,18 +90,18 @@
     <section class="main">
         <aside>
             <h1>FAQ</h1>
-            <div class="btn-qmenu">
-                <a href="#" class="tab-btn active">法規權益</a>
-                <a href="#" class="tab-btn">結構安全</a>
-                <a href="#" class="tab-btn">成本估算</a>
-                <a href="#" class="tab-btn">設計施工</a>
+            <div class="btn-qmenu">   <!-- 加 data-tab(自設屬性) 是為了靠屬性值來切換下方的 qa 區域-->
+                <button class="tab-btn active" data-tab="law">法規權益</button>
+                <button class="tab-btn" data-tab="structure">結構安全</button>
+                <button class="tab-btn" data-tab="cost">成本估算</button>
+                <button class="tab-btn" data-tab="design">設計施工</button>
             </div>
         </aside>
-        <article class="qa law">
+        <article class="qa active law">
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">改建需要申請哪些執照或許可證？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">依據改建涉及的範圍不同，需要申請不同的證照。<br>
                                 例如：<br>
@@ -114,9 +114,9 @@
             </div>
             <hr>
              <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">如何查詢房屋原始登記資料與竣工圖？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">可向各地地政事務所申請建物登記謄本，並向建管單位申請調閱原始使用執照圖說。<br>
                     這也是我們進行結構安全評估的第一步。
@@ -124,9 +124,9 @@
             </div>
             <hr>
              <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">如何確認改建計畫是否符合目前最新的容積率與建蔽率？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">需先調閱房屋的原始使照圖與地籍資料，特別是老屋，常有不合規的增建。<br>
                     我們在設計前期會依據最新的土地使用分區規定，確保所有再生計畫都能合法延續。
@@ -134,9 +134,9 @@
             </div>
             <hr>
              <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">歷史建築或老舊公寓改建，是否有政府的補助或稅賦優惠？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">部份縣市針對老屋拉皮、增設電梯或結構補強提供補助，具體視建物年限和地區法規而定。<br>
                     我們在諮詢階段會協助您查詢所有可申請的資源。
@@ -147,9 +147,9 @@
 
         <article class="qa structure">
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">常見的結構補強方式有哪些？ 它們會影響空間使用嗎？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">常見方式包括：碳纖維包覆、鋼板貼附、擴大樑柱斷面等。<br>
                         我們的設計會將補強融入空間規劃，例如將擴大後的柱體轉化為收納牆或造型牆，達到結構與美學的韻律共存。
@@ -157,9 +157,9 @@
             </div>
             <hr>
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">進行建築再生時，如何提升房屋的耐震能力？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">提升耐震能力的核心在於「補強」和「韌性」。<br>
                                 常見方式是增加剪力牆、使用制震壁或軟弱層補強。這類補強必須交由結構專業團隊進行設計與施工。
@@ -167,18 +167,18 @@
             </div>
             <hr>
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">結構補強後，建築物的使用年限可以延長多久？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">妥善的結構補強與維護可以大幅延長建築的服務年限，有時甚至能達到與新建物相近的耐久水準。
                 </p>
             </div>
             <hr>
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">室內隔間牆可以隨意拆除嗎？ 如何判斷它是否為剪力牆？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">不可以隨意拆除！<br>
                                 必須透過調閱原始竣工圖或請技師現場鑽探判斷。剪力牆是重要的抗震結構，拆除會嚴重危及安全。<br>
@@ -190,9 +190,9 @@
 
         <article class="qa cost">
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">舊建築翻新的總預算通常應該如何分配？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">建議的分配比例大致為：<br>
                                 —— 設計與監工費（10-15%）<br>
@@ -205,9 +205,9 @@
             </div>
             <hr>
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">估價單中常出現哪些「隱藏成本」？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">例如：<br>
                     保護工程費用、拆除後的廢棄物清運費、臨時水電申請費以及最易被忽略的「追加變更」預備金等等（建議預留 10-15%）。<br>
@@ -217,9 +217,9 @@
             </div>
             <hr>
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">AfterFLOW 的設計費如何計算？ 包含哪些服務？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">設計費通常以「總工程造價的百分比」或「每坪單價」計算，並會明確區分設計階段和監工階段的服務內容。<br>
                     我們的費用涵蓋了空間意念的引導、詳細圖說繪製、材料規格選定及施工介面溝通。
@@ -227,9 +227,9 @@
             </div>
             <hr>
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">工程款項的支付節點通常如何規劃？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">工程款項一般分為五到六期：<br>
                     簽約（10-20%）、拆除完成（10-15%）、基礎結構完成（25-30%）、裝修完成（25-30%）、驗收交屋（5-10%），<br>
@@ -242,9 +242,9 @@
 
         <article class="qa design">
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">AfterFLOW 的完整設計與施工流程通常需要多久時間？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">舊建築再生的專案通常較為複雜，一般建議時程為：<br>
                     —— 設計期約 3-6 個月（包含結構鑑定與法規審核）<br>
@@ -255,9 +255,9 @@
             </div>
             <hr>
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">施工過程中，設計師或業主監工的頻率大約多久一次？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">關鍵節點（如拆除定位、水電配管、泥作打底、木作封板前）設計師必定到場查驗。<br>
                     業主可依需求約定每週一次的工地會議，確保資訊透明。
@@ -265,9 +265,9 @@
             </div>
             <hr>
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">施工期間如果需要追加或變更設計，流程該如何處理？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">任何變更都需經由設計師重新繪圖確認，並由工程團隊提供詳細的報價單與工期影響評估。<br>
                     在雙方簽字確認後，才進入施工階段。
@@ -276,9 +276,9 @@
             </div>
             <hr>
             <div>
-                <a class="q" href="#">
+                <a class="q">
                     <h6 class="qword">如何確保設計師能精準理解我對空間的「意念」？</h6>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <p class="ans">我們的設計過程包含深度訪談與生活習慣解析，確保設計師捕捉到您希望傳承的價值與狀態。<br>
                     初期的概念提案與 3D 模擬，會反覆與您確認，確保我們對空間意念的理解一致。<br>
@@ -328,32 +328,73 @@
         //漢堡選單
         $(function(){
             $('.fa-bars-staggered').click(function(){
-                $('.btn-menu').slideToggle(100)
+                $('.btn-menu').slideToggle(100);
             })
-        })
+        });
 
         $(function(){
             $('.fa-xmark').click(function(){
-                $('.btn-menu').slideToggle(100)
+                $('.btn-menu').slideToggle(100);
             })
-        })
+        });
 
         // 捲動時顯示/隱藏按鈕
         $(window).scroll(function () {
             if ($(this).scrollTop() > 500) {
-                $('.fa-chevron-up').fadeIn();
+                $('body>.fa-chevron-up').fadeIn();
             } else {
-                $('.fa-chevron-up').fadeOut();
+                $('body>.fa-chevron-up').fadeOut();
             }
         });
 
         //回到頂端按鈕
         $(function () {
             $('.fa-chevron-up').click(function () {
-                //$(window).scrollTop(0);   //document不會捲動，這行會直接跳到頂，沒有過度效果
-                $('html, body').animate({ scrollTop: 0 }, 500);   //html, body 都寫是為了讓所有的瀏覽器都有效
+                $('html, body').animate({ scrollTop: 0 }, 500);  
             })
 
+        });
+
+        //ans開合
+        $(function () {
+            $('.q').click(function () {
+                
+                $('.ans').not($(this).next('.ans')).slideUp(100);      //這行先寫的原因是為了避免後面slideToggle有動畫累積或錯誤判斷
+                
+                $('.fa-chevron-down').not($(this).find('.fa-chevron-down')).removeClass('rotate');      //用toggle會動到所有的 .fa-chevron-down
+    
+                // $(this).next('.ans').slideToggle(100).find('.fa-chevron-down').toggleClass('rotate');    //寫一起，find會失效
+                $(this).next('.ans').slideToggle(100);
+                $(this).find('.fa-chevron-down').toggleClass('rotate'); 
+                
+            })
+
+        })
+
+
+        //切換區塊
+        $(function(){
+            $('.tab-btn').click(function(){
+
+                // 按鈕
+
+                //$(this).addClass('active').not($(this)).removeClass('active');   not不是這樣執行
+                
+                //使用 not 的寫法
+                // 先選擇所有 tab-btn,再排除當前這個
+                // $('.tab-btn').not($(this)).removeClass('active');
+                // $(this).addClass('active');
+                
+                $(this).addClass('active').siblings('.tab-btn').removeClass('active')
+
+
+                // 區塊
+                let tabName = $(this).data('tab');
+
+                $('.qa').removeClass('active');
+                $('.qa.' + tabName).addClass('active');
+
+            })
         })
     </script>
 
