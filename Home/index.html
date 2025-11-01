@@ -15,6 +15,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- banner套件 -->
+    <link rel="stylesheet" href="../assets/vegas/vegas.css">
+    <script src="../assets/vegas/vegas.js"></script>
 </head>
 
 <body>
@@ -59,7 +62,6 @@
 
     <!-- header -->
     <header class="header">
-        <img class="bgi" src="../assets/Event/Sala_Beckett/1.jpg" alt="">
 
         <nav class="top">
             <a class="btn-back" href="../Home/index.html"><img src="../assets/LOGO/LOGO_W.png" alt=""></a>
@@ -112,7 +114,7 @@
             </li>
             <li>
                 <a class="img-event" href="#">
-                    <img src="../assets/Event/El_Roser /4.jpg" alt="">
+                    <img src="../assets/Event/El_Roser/4.jpg" alt="">
                 </a>
                 <a class="word-event" href="#">
                     <h3>El Roser Social Center</h3>
@@ -299,11 +301,17 @@
 
         })
 
-
-        //回到頂端按鈕
+        //banner
         $(function () {
-
-        })
+            $('.header').vegas({
+                slides: [
+                    { src: "../assets/Event/Sala_Beckett/1.jpg" },
+                    { src: "../assets/Event/Pingyao/5-min.jpg" },
+                    { src: "../assets/Event/New_Lecture_Center/8-min.jpg" },
+                    { src: "../assets/Event/El_Roser/1-min.jpg" }
+                ]
+            });
+        });
 
 
 
