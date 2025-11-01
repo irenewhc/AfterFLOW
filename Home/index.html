@@ -26,7 +26,7 @@
         <div class="nav1">
             <i class="fa-solid fa-xmark"></i>
             <a class="btn-logo" href="../Home/index.html"><img src="../assets/LOGO/LOGO_B.png" alt=""></a>
-            <a  href="../Contact/Contact.html">Contact</a></li>
+            <a href="../Contact/Contact.html">Contact</a></li>
         </div>
         <div class="nav2">
             <ul class="menu-list">
@@ -51,7 +51,7 @@
                     <li><a href="#">- Facebook</a></li>
                     <li><a href="#">- Instagram</a></li>
                 </ul>
-                <a href="#">Privacy Policy</a>       
+                <a href="#">Privacy Policy</a>
             </div>
         </div>
     </nav>
@@ -75,7 +75,9 @@
 
         <div class="banner">
             <h5>Sala Backett</h5> <!-- 這行會根據輪播的圖片跑文字 -->
-            <a href="../Event/Event.html"><h5>SEE MORE</h5></a>
+            <a href="../Event/Event.html">
+                <h5>SEE MORE</h5>
+            </a>
             <i class="fa-solid fa-chevron-right"></i>
         </div>
 
@@ -158,7 +160,7 @@
             </span>
         </a>
 
-        
+
     </section>
 
     <!-- article -->
@@ -196,10 +198,10 @@
         <article>
             <h5>ABOUT</h5>
             <h1>AfterFLOW</h1>
-            <p>當一個地區的溫度、濕度、地形不同時，空氣就會開始流動形成風。<br>
-                當一棟建築的家人、習慣、狀態更迭時，空間就會開始流動需要再生。<br>
+            <p>當一個地區的溫度、濕度、地形不同時，空氣開始流動形成風。<br>
+                當一棟建築的家人、習慣、狀態更迭時，空間開始流動需要再生。<br>
                 <br>
-                空間的再生不一定是打掉重來，而是延續。<br>
+                空間的再生不一定要打掉重來，而是延續。<br>
                 因為建築代表的並不單純是物件，它承載著時間、文化還有生活，或許人們更應該優先討論的是，這次我們想要把什麼傳承下去？<br>
                 —— 工法、講究，還是情感<br>
                 接著透過建築將意念印記在歷史的時間軸線中。
@@ -247,16 +249,16 @@
         </ul>
         <hr>
         <div class="bottom">
-            
+
             <img src="../assets/LOGO/LOGO+W.png" alt="">
-            
+
             <div class="word-bottom">
                 <div>
                     <p>© Copyright 2025 AfterFLOW Lab</p>
                     <p>Mail:<span class="mail">afterflowlab@afterflow-lab.com.tw</span></p>
                 </div>
 
-                <a href="#">Privacy Policy</a>               
+                <a href="#">Privacy Policy</a>
             </div>
 
         </div>
@@ -264,8 +266,8 @@
 
     <script>
         //漢堡選單
-        $(function(){
-            $('.fa-bars-staggered').click(function(){
+        $(function () {
+            $('.fa-bars-staggered').click(function () {
                 // $('.btn-menu').css('left', 0)
                 // $('.btn-menu').animate({left: '0'}, 100)
                 //$('.btn-menu').css('left', 0).slideToggle(100)
@@ -273,11 +275,39 @@
             })
         })
 
-        $(function(){
-            $('.fa-xmark').click(function(){
+        $(function () {
+            $('.fa-xmark').click(function () {
                 $('.btn-menu').slideToggle(100)
             })
         })
+
+        // 捲動時顯示/隱藏按鈕
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $('.fa-chevron-up').fadeIn();
+            } else {
+                $('.fa-chevron-up').fadeOut();
+            }
+        });
+
+        //回到頂端按鈕
+        $(function () {
+            $('.fa-chevron-up').click(function () {
+                //$(window).scrollTop(0);   //document不會捲動，這行會直接跳到頂，沒有過度效果
+                $('html, body').animate({ scrollTop: 0 }, 500);   //html, body 都寫是為了讓所有的瀏覽器都有效
+            })
+
+        })
+
+
+        //回到頂端按鈕
+        $(function () {
+
+        })
+
+
+
+
     </script>
 
 

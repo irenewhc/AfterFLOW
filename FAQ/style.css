@@ -58,8 +58,11 @@ body>.fa-chevron-up {
     bottom: 40px;
     z-index: 5;
 
-    color: #020F1A;
+    color: #fff;
     font-size: 2rem;
+    mix-blend-mode: difference;
+
+    display: none;            /* 加入捲動效果 */
 }
 
 /* 漢堡選單 ----------------------------------*/

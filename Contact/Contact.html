@@ -265,6 +265,24 @@
                 $('.btn-menu').slideToggle(100)
             })
         })
+
+        // 捲動時顯示/隱藏按鈕
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $('.fa-chevron-up').fadeIn();
+            } else {
+                $('.fa-chevron-up').fadeOut();
+            }
+        });
+
+        //回到頂端按鈕
+        $(function () {
+            $('.fa-chevron-up').click(function () {
+                //$(window).scrollTop(0);   //document不會捲動，這行會直接跳到頂，沒有過度效果
+                $('html, body').animate({ scrollTop: 0 }, 500);   //html, body 都寫是為了讓所有的瀏覽器都有效
+            })
+
+        })
     </script>
 
 
