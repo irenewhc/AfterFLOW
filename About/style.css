@@ -269,13 +269,17 @@ main {
 .about h6:nth-of-type(1) {
     margin-top: 60px;
 }
+/* 跑馬燈---------------------------------- */
+.pic-scroll {              /* 阻止跑馬燈產生橫軸 */       
+    overflow: hidden;
+}
 
 .pic {
     display: flex;
     gap: 32px;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 80px 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .event-pic {

@@ -82,32 +82,36 @@
     <main>
         <!-- about -->
 
-        <section class="about">
-            <h1>About</h1>
-            <div class="logo-c">
-                <img class="logo-color" src="../assets/LOGO/LOGO+W_C.png" alt="">        
-            </div>
-            <h6>When the wind has passed,<br> 
-                what whispers will the building keep within its walls?</h6>
-            <h6>當風流過之後，建築會記得什麼？</h6>
+        <section class="about">        
+                <h1>About</h1>
+                <div class="logo-c">
+                    <img class="logo-color" src="../assets/LOGO/LOGO+W_C.png" alt="">        
+                </div>
             
-            <div class="pic">
-                <div class="event-pic">
-                    <img src="../assets/Event/Civic_Centre/5-min.jpg" alt="">
+                <h6>When the wind has passed,<br> 
+                    what whispers will the building keep within its walls?</h6>
+                <h6>當風流過之後，建築會記得什麼？</h6>
+                
+                <div class="pic-scroll">
+
+                    <div class="pic" id="scrollTrack">
+                        <div class="event-pic">
+                            <img src="../assets/Event/Civic_Centre/5-min.jpg" alt="">
+                        </div>
+                        <div class="event-pic">
+                            <img src="../assets/Event/Sala_Beckett/5.jpg" alt="">
+                        </div>
+                        <div class="event-pic">
+                            <img src="../assets/Event/Pingyao/1-min.jpg" alt="">
+                        </div>
+                        <div class="event-pic">
+                            <img src="../assets/Event/New_Lecture_Center/2-min.jpg" alt="">
+                        </div>
+                        <div class="event-pic">
+                            <img src="../assets/Event/El_Roser/1-min.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="event-pic">
-                    <img src="../assets/Event/Sala_Beckett/5.jpg" alt="">
-                </div>
-                <div class="event-pic">
-                    <img src="../assets/Event/Pingyao/1-min.jpg" alt="">
-                </div>
-                <div class="event-pic">
-                    <img src="../assets/Event/New_Lecture_Center/2-min.jpg" alt="">
-                </div>
-                <div class="event-pic">
-                    <img src="../assets/Event/El_Roser/1-min.jpg" alt="">
-                </div>
-            </div>
         </section>
 
         <!-- content -->
@@ -234,6 +238,25 @@
             })
 
         })
+
+        $(document).ready(function() {
+            let $track = $('#scrollTrack');
+            $track.children().clone().appendTo($track);
+
+            let itemWidth = 340 + 32;  // ⭐ 寬度 + 間距
+            let totalWidth = itemWidth * ($track.children().length / 2);
+            let position = 0;
+            let speed = 1;
+
+            function animate() {
+                position -= speed;
+                if (position <= -totalWidth) position = 0;
+                $track.css('transform', 'translateX(' + position + 'px)');
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        });
 
 
 
