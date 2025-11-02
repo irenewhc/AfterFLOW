@@ -270,13 +270,12 @@ main {
     margin-top: 60px;
 }
 
-/* 此區因為改用輪播套件，註解部分內容 */
 .pic {
     display: flex;
     gap: 32px;
     justify-content: center;
     padding: 80px 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .event-pic {
@@ -291,21 +290,6 @@ main {
     object-fit: cover;
     border-radius: 10px;
 }
-
-/* 此區因為改用輪播套件，修正後的內容 */
-/* .owl-carousel .owl-item .event-pic {
-    display: block;
-    width: 340px !important;
-    height: 416px !important;
-    margin: 0 16px;
-}
-
-.owl-carousel .owl-item .event-pic img {
-    height: 100%;  
-    object-fit: cover;
-    border-radius: 10px;
-} */
-
 
 /*---------------------------------- content */
 .about-content {

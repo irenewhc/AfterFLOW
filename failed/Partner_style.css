@@ -3,28 +3,60 @@
 
 html {
     font-family: "Noto Sans TC", "Noto Sans", sans-serif;
-    font-size: 62.5%;            /* 預設字級調整為10px */
+    font-size: 62.5%;
+    /* 預設字級調整為10px */
     letter-spacing: 0.2em;
 
-    background-color: #fff;       /* 讓漢堡選單在白底時變黑色 */
+    background-color: #fff;
+    /* 讓漢堡選單在白底時變黑色 */
 
 }
 
-h1, h2, h3, h4, h5, h6, p {line-height: 200%;}
-h1 {font-size: 3.2rem;}
-h2 {font-size: 2.4rem;}
-h3 {font-size: 2.2rem;}
-h4 {font-size: 2rem;}
-h5 {font-size: 1.8rem;}
-h6 {font-size: 1.6rem;}
-p {font-size: 1.4rem;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 200%;
+}
 
-*, *::before, *::after {
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 /*---------------------------------- body */
-
 .top-fixed {
     height: 80px;
     width: 30%;
@@ -62,7 +94,8 @@ p {font-size: 1.4rem;}
     font-size: 2rem;
     mix-blend-mode: difference;
 
-    display: none;            /* 加入捲動效果 */
+    display: none;
+    /* 加入捲動效果 */
 }
 
 /* 漢堡選單 ----------------------------------*/
@@ -212,7 +245,7 @@ p {font-size: 1.4rem;}
     width: 100%;
 }
 
-.btn-contact{
+.btn-contact {
     font-size: 1.8rem;
     color: #020F1A;
     text-decoration: none;
@@ -238,199 +271,140 @@ p {font-size: 1.4rem;}
 
 /*---------------------------------- main */
 main {
-    margin-top: 160px;
+    margin: 160px 0;
 }
 
-/*---------------------------------- title */
-.title {
-    margin: 0 135px 80px;
+/*---------------------------------- intro */
+.intro {
+    margin: 0 135px;
 }
 
-.title-pic {
+.intro h1 {
+    color: #020F1A;
+    font-weight: bold;
+}
+
+.intro h6 {
+    color: #7F7F7F;
+    margin-top: 24px;
+}
+
+/*---------------------------------- partner-co */
+
+.partner-co {
+    display: flex;
+    justify-content: space-around;
+    margin: 160px 135px 320px;
+}
+
+.partner-co-pic1,
+.partner-co-pic2 {
+    width: 35vw;
+}
+
+.partner-co-pic1 div,
+.partner-co-pic2 div {
     width: 100%;
-    overflow: hidden;
 }
 
-.title-pic img {
+.partner-co-pic2 {
+    margin-top: 10vh;
+}
+
+.partner-co-pic1 img,
+.partner-co-pic2 img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-
     object-fit: cover;
-}
-
-.title-word {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 80px;
-}
-
-.title-left h1 {
-    stop-color: #020F1A;
-    font-size: 3.6rem;
-    font-weight: bold;
-}
-
-.title-right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    gap: 28px;
-    width: 40vw;
-}
-.title-block-long {
-    width: 200px;
- }
-
-.title-block {
-    width: 150px;
- }
-
-.gray {
-    color: #7F7F7F;
- }
-
-.black {
-    color: #020F1A;
-    font-weight: bold;
- }
-
-/*---------------------------------- content */
-
-.event-content {
-    margin: 0 135px;
-}  
-
-.content-title b {
-    color: #020F1A;
-    font-weight: bold;
-    font-size: 1.8rem;
-}
-
-.content-title {
-    color: #020F1A;
-    margin-bottom: 80px;
-    text-align: justify;
-}
-
-.float-image {
-    width: 30vw;
-    float: left;
-    margin-right: 60px;    
-    margin-bottom: 60px;
-}
-
-.float-image img{
     border-radius: 10px;
-    width: 100%;
-    height: auto;
-    display: block;    
+    opacity: .9;
 }
 
-.content-word {
-    color:#7F7F7F;
-    margin-bottom: 60px;
-    text-align: justify;
+.partner-co figcaption {
+    color: #020F1A;
+    font-size: 2.4rem;
+    line-height: 200%;
+    margin-left: 25px;
+    letter-spacing: 0.2em;
+    font-weight: 600;
 }
 
-.content-word b {
+.partner-co h5 {
     color: #7F7F7F;
-    font-weight: bold;
-    font-size: 1.8rem;
+    margin-left: 25px;
 }
 
-/*---------------------------------- picture */
-
-
-.pic {
+/*---------------------------------- partner */
+/* 此區因為改用輪播套件，註解部分內容 */
+/* .partner .pic {
     display: flex;
     gap: 32px;
     justify-content: center;
-    padding: 80px 0 160px;
     overflow: hidden;
-}
+} */
 
-.event-pic {
-    flex-shrink: 0;
+.partner-pic {
+    /* flex-shrink: 0;
     width: 340px;
-    height: 416px;
+    height: 65vh; */
+    position: relative;
 }
 
-.event-pic img{
+/* .partner-pic img{
     height: 100%;  
     width: 100%;  
     object-fit: cover;
     border-radius: 10px;
+} */
+
+.pic1 img,
+.pic3 img,
+.pic4 img,
+.pic5 img {
+    object-position: center -15px;
 }
 
-.picture hr {
-    width: 90%;
-    border: 0.5px solid #d1d1d1;
+.pic2 img {
+    object-position: center 0px;
 }
 
-/*---------------------------------- next */
-.next {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 28px 135px 0;
+.partner-pic-name {
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+    color: #fff;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+
+    background-image: linear-gradient(180deg, #7f7f7f00 0%, #b0b0b0 100%);
 }
 
-.next-left a{
-    color: #7F7F7F;
-    line-height: 200%;
-    font-size: 1.4rem;
+.partner-pic-name h2,
+.partner-pic-name h5 {
+    margin-left: 25px;
     font-weight: bold;
+}
+
+.partner-pic-name h2 {
+    font-weight: bold;
+}
+
+.partner-pic-name h5 {
+    margin-bottom: 20px;
+}
+
+/* 此區因為改用輪播套件，修正後的內容 */
+.owl-carousel .owl-item .partner-pic {
     display: block;
-    margin-top: 60px;
+    width: 340px !important;
+    height: 416px !important;
+    margin: 0 16px;
 }
 
-.next-right {
-    width: 70vw;
-    text-decoration: none;
-}
-
-.next-right h3{
-    color: #020F1A;
-    font-weight: 600;
-}
-
-.block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.block h4 {
-    color: #7F7F7F;
-}
-
-.block span {
-    margin-top: 5px;
-}
-
-.block span span:nth-of-type(2) {
-    margin-right: 20px;
-}
-
-.block span>br {
-    display: none;
-}
-
-.next-pic {
-    width: 100%;
-    height: 240px;
-    overflow: hidden;
-    border-radius: 10px 10px 0 0 ;
-    margin-top: 28px;
-}
-
-.next-pic img {
-    width: 100%;
+.owl-carousel .owl-item img {
     height: 100%;
     object-fit: cover;
-    object-position: center -80px;
+    border-radius: 10px;
 }
 
 /*---------------------------------- footer */
@@ -441,11 +415,11 @@ footer {
     padding: 80px 60px 60px;
 }
 
-footer>hr {
+hr {
     border: 0.5px solid #d1d1d1;
 }
 
-footer>hr:nth-last-of-type(1) {
+hr:nth-last-of-type(1) {
     display: none;
 }
 
@@ -542,26 +516,23 @@ footer>hr:nth-last-of-type(1) {
 
 /*----------------------------------------------- RWD */
 /*----------------------------------------------- RWD 1200*/
-@media screen and (max-width: 1200px){
-    /*---------------------------------- title */
-    .title {
-        margin: 0 80px 80px;
+@media screen and (max-width: 1200px) {
+
+    /*---------------------------------- intro */
+    .intro {
+        margin: 0 80px;
     }
 
-    /*---------------------------------- content */
-
-    .event-content {
-        margin: 0 80px;
-    } 
-
-    /*---------------------------------- next */
-    .next {
-        margin: 28px 80px 0;
+    /*---------------------------------- partner-co */
+    .partner-co {
+        margin: 160px 80px 240px;
     }
 
 }
+
 /*----------------------------------------------- RWD 992*/
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
+
     /*---------------------------------- 漢堡選單 */
     .nav2 {
         margin-top: 40px;
@@ -602,9 +573,9 @@ footer>hr:nth-last-of-type(1) {
     .top {
         column-gap: 13vw;
     }
-    
+
     .top ul {
-        width: 55%;  
+        width: 55%;
     }
 
     /*---------------------------------- main */
@@ -612,51 +583,26 @@ footer>hr:nth-last-of-type(1) {
         margin-top: 100px;
     }
 
-    /*---------------------------------- title */
-    .title-left h1{
-        font-size: 2.4rem;
-    }
-    
-    .title-word h5 {
-        font-size: 1.4rem;
-    }
-    .title-right {
-        gap: 16px;
-        width: 298px;
+    /*---------------------------------- intro */
+    .intro {
+        border-bottom: 1px solid #b0b0b0;
+        padding-bottom: 50px;
     }
 
-    .title-block-long {
-        width: 160px;
-    }
-
-    .title-block {
-        width: 110px;
-    }
-
-    /*---------------------------------- next */
-    .next-left a {
-        font-size: 1.2rem;
-    }
-
-    .next-right h3 {
-        font-size: 1.8rem;
-    }
-
-    .block h4 {
-        font-size: 1.6rem;
-    }
-
-    .block {
+    /*---------------------------------- partner-co */
+    .partner-co {
+        margin: 100px 80px 160px;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
-    .next-pic {
-        height: 180px;
+    .partner-co div {
+        width: 340px;
     }
 
-    .next-pic img {
-        object-position: center -20px;
+    .partner-co-pic1,
+    .partner-co-pic2 {
+        width: 100%;
     }
 
     /*---------------------------------- footer */
@@ -679,57 +625,20 @@ footer>hr:nth-last-of-type(1) {
         align-items: flex-start;
     }
 }
+
 /*----------------------------------------------- RWD 768*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+
     /*---------------------------------- header */
     .top ul {
         display: none;
     }
-
-    /*---------------------------------- title */
-    .title {
-        margin: 0 80px 40px;
-    }
-    
-    .title-word {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 40px;
-    }
-
-    .title-right {
-        margin-top: 28px;
-        justify-content: space-between;
-        width: 100%;    
-    }
-
-    .title-block-long {
-        width: auto;
-    }
-
-    .title-block {
-        width: auto;
-    }
-
-    /*---------------------------------- content */
-    .content-title {
-        margin-bottom: 40px;
-    }
-
-    .float-image {
-        width: 35vw;
-        margin-right: 60px;    
-        margin-bottom: 40px;
-    }
-
-    .content-word {
-        margin-bottom: 40px;
-    }
-
 }
+
 /*----------------------------------------------- RWD 576*/
-@media screen and (max-width: 576px){
-     /*---------------------------------- 漢堡選單 */
+@media screen and (max-width: 576px) {
+
+    /*---------------------------------- 漢堡選單 */
     .btn-menu {
         padding: 0 40px 20px;
     }
@@ -789,46 +698,23 @@ footer>hr:nth-last-of-type(1) {
         margin-top: 80px;
     }
 
-    /*---------------------------------- title */
-    .title {
-        margin: 0 40px 80px;
-    }
-
-    .title-right {
-        justify-content: left;
-    }
-    .title-block-long {
-        width: 160px;
-    }
-
-    .title-block {
-        width: 110px;
-    }
-
-    /*---------------------------------- content */
-    .event-content {
+    /*---------------------------------- intro */
+    .intro {
         margin: 0 40px;
-    } 
-    .float-image {
+    }
+
+    /*---------------------------------- partner-co */
+    .partner-co {
+        margin: 100px 40px 160px;
+    }
+
+    .partner-co-pic1,
+    .partner-co-pic2 {
         width: 100%;
-        margin-right: 0;   
     }
 
-    /*---------------------------------- next */
-    .next {
-        margin: 28px 40px 0;
-    }
-
-    .next-pic {
-        height: 100px;
-    }
-
-    .next-pic img {
-        object-position: center -10px;
-    }
-
-    .block span>br {
-        display: block;
+    .partner-co-pic2 {
+        margin-top: 15vh;
     }
 
     /*---------------------------------- footer */
@@ -868,8 +754,10 @@ footer>hr:nth-last-of-type(1) {
         width: 60%;
     }
 }
+
 /*----------------------------------------------- RWD 440*/
-@media screen and (max-width: 440px){
+@media screen and (max-width: 440px) {
+
     /*---------------------------------- 漢堡選單 */
     .btn-menu {
         padding: 0 20px 20px;
@@ -897,11 +785,6 @@ footer>hr:nth-last-of-type(1) {
     /*---------------------------------- main */
     main {
         margin-top: 60px;
-    }
-
-    /*---------------------------------- picture */
-    .pic {
-        padding: 60px 0 100px;
     }
 
     /*---------------------------------- footer */
