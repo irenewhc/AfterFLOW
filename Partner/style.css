@@ -297,35 +297,34 @@ main {
 }
 
 /*---------------------------------- partner */
-
-.partner .pic {
+/* 此區因為改用輪播套件，註解部分內容 */
+/* .partner .pic {
     display: flex;
     gap: 32px;
     justify-content: center;
     overflow: hidden;
-}
+} */
 
 .partner-pic {
-    flex-shrink: 0;
+    /* flex-shrink: 0;
     width: 340px;
-    height: 65vh;
-
+    height: 65vh; */
     position: relative;
 }
 
-.partner-pic img{
+/* .partner-pic img{
     height: 100%;  
     width: 100%;  
     object-fit: cover;
     border-radius: 10px;
+} */
+
+.pic1 img, .pic3 img, .pic4 img, .pic5 img {
+    object-position: center -15px;
 }
 
-.pic1 img, .pic2 img, .pic3 img, .pic4 img {
-    object-position: center 0;
-}
-
-.pic5 img {
-    object-position: center -10px;
+.pic2 img {
+    object-position: center 0px;
 }
 
 .partner-pic-name {
@@ -350,6 +349,20 @@ main {
 
 .partner-pic-name h5 {
     margin-bottom: 20px;
+}
+
+/* 此區因為改用輪播套件，修正後的內容 */
+.owl-carousel .owl-item .partner-pic {
+    display: block;
+    width: 340px !important;
+    height: 416px !important;
+    margin: 0 16px;
+}
+
+.owl-carousel .owl-item img {
+    height: 100%;  
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /*---------------------------------- footer */
