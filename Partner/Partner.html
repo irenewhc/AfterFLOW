@@ -15,7 +15,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
-
+    <!-- 輪播套件 -->
+    <link rel="stylesheet" href="../assets/owl/owl.carousel.css">
+    <link rel="stylesheet" href="../assets/owl/owl.theme.default.css">
+    <script src="../assets/owl/owl.carousel.js"></script>
 
 </head>
 
@@ -32,7 +35,7 @@
         <div class="nav1">
             <i class="fa-solid fa-xmark"></i>
             <a class="btn-logo" href="../Home/index.html"><img src="../assets/LOGO/LOGO_B.png" alt=""></a>
-            <a  href="../Contact/Contact.html">Contact</a></li>
+            <a href="../Contact/Contact.html">Contact</a></li>
         </div>
         <div class="nav2">
             <ul class="menu-list">
@@ -57,7 +60,7 @@
                     <li><a href="#">- Facebook</a></li>
                     <li><a href="#">- Instagram</a></li>
                 </ul>
-                <a href="#">Privacy Policy</a>       
+                <a href="#">Privacy Policy</a>
             </div>
         </div>
     </nav>
@@ -78,19 +81,19 @@
 
     </header>
 
-    
+
     <main>
         <!-- Intro -->
 
         <article class="intro">
             <h1>Partner</h1>
-            
+
             <h6>AfterFLOW 的再生哲學，來自空間意念的引導與嚴謹的工藝基底之間的動態平衡。<br>
                 我們凝聚了一群與建築再生共鳴的夥伴，追求從概念到實踐都達到流暢而有機的轉化，共同為建築創造一個持續對話的場景，迎向下趟旅程。
             </h6>
 
         </article>
-        
+
         <!-- Partner-co -->
         <section class="partner-co">
 
@@ -101,7 +104,7 @@
                 <div class="partner-co-name1">
                     <figcaption>刻時營建</figcaption>
                     <h5>Chronos Construction</h5>
-                </div>  
+                </div>
             </div>
 
             <div class="partner-co-pic2">
@@ -111,7 +114,7 @@
                 <div class="partner-co-name2">
                     <figcaption>沃土築所工作室</figcaption>
                     <h5>Verto Architects</h5>
-                </div>             
+                </div>
             </div>
 
         </section>
@@ -120,8 +123,8 @@
         <!-- Partner- -->
 
         <section class="partner">
-            
-            <div class="pic">
+
+            <div class="pic owl-carousel owl-theme">
 
                 <div class="partner-pic pic1">
                     <img src="../assets/partner/Ethan-min.png" alt="">
@@ -144,7 +147,7 @@
                         <h5>Interior Designer</h5>
                     </div>
                 </div>
-                
+
                 <div class="partner-pic pic4">
                     <img src="../assets/partner/Oscar-min.png" alt="">
                     <div class="partner-pic-name name4">
@@ -184,16 +187,16 @@
         </ul>
         <hr>
         <div class="bottom">
-            
+
             <img src="../assets/LOGO/LOGO+W.png" alt="">
-            
+
             <div class="word-bottom">
                 <div>
                     <p>© Copyright 2025 AfterFLOW Lab</p>
                     <p>Mail:<span class="mail">afterflowlab@afterflow-lab.com.tw</span></p>
                 </div>
 
-                <a href="#">Privacy Policy</a>               
+                <a href="#">Privacy Policy</a>
             </div>
 
         </div>
@@ -201,14 +204,14 @@
 
     <script>
         //漢堡選單
-        $(function(){
-            $('.fa-bars-staggered').click(function(){
+        $(function () {
+            $('.fa-bars-staggered').click(function () {
                 $('.btn-menu').slideToggle(100)
             })
         })
 
-        $(function(){
-            $('.fa-xmark').click(function(){
+        $(function () {
+            $('.fa-xmark').click(function () {
                 $('.btn-menu').slideToggle(100)
             })
         })
@@ -231,6 +234,27 @@
 
         })
 
+        //輪播套件
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+
+                loop: true,              // 啟用循環播放
+                autoplay: true,          // 自動播放
+                autoplayTimeout: 2000,   // 每2秒切換
+                autoplaySpeed: 1000,     // 動畫速度1秒
+                autoplayHoverPause: true,// 滑鼠懸停暫停
+                margin: 0,               // 項目間距
+
+                //關鍵設置
+                autoWidth: true,         // 啟用自動寬度(使用CSS設定的寬度)
+                margin: 0,               // margin設為0(用CSS控制)
+
+                // nav: true,               // 顯示導航
+                responsive: false        // 關閉響應式(用CSS media query控制)
+
+            });
+
+        });
     </script>
 
 
