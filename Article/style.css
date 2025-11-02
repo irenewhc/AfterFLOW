@@ -341,20 +341,17 @@ main {
 }
 
 /*---------------------------------- picture */
-
-.picture {
-    /* clear: both; */
-}
+/* 此區因為改用輪播套件，註解掉部分內容 */
 
 .pic {
-    display: flex;
+    /* display: flex;
     gap: 32px;
-    justify-content: center;
+    justify-content: center; */
     padding: 80px 0 160px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-.event-pic {
+/* .event-pic {
     flex-shrink: 0;
     width: 340px;
     height: 416px;
@@ -365,11 +362,26 @@ main {
     width: 100%;  
     object-fit: cover;
     border-radius: 10px;
-}
+} */
 
 .picture hr {
     width: 90%;
     border: 0.5px solid #d1d1d1;
+}
+
+
+/* 此區因為改用輪播套件，修正後的內容 */
+.owl-carousel .owl-item .event-pic {
+    display: block;
+    width: 340px !important;
+    height: 416px !important;
+    margin: 0 16px;
+}
+
+.owl-carousel .owl-item img {
+    height: 100%;  
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /*---------------------------------- next */

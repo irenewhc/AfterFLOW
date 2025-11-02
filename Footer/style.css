@@ -22,6 +22,35 @@ p {font-size: 1.4rem;}
     box-sizing: border-box;
 }
 
+/*---------------------------------- picture */
+/* .picture .pic {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    padding: 80px 0 160px;
+    overflow: hidden;
+}
+
+.picture .pic .event-pic {
+    flex-shrink: 0;
+    width: 340px;
+    height: 416px;
+}
+
+.event-pic img{
+    height: 100%;  
+    width: 100%;  
+    object-fit: cover;
+    border-radius: 10px;
+} */
+
+/* 以上因為改用輪播所以註解 */
+
+.picture hr {
+    width: 90%;
+    border: 0.5px solid #d1d1d1;
+}
+
 /*---------------------------------- footer */
 
 footer {

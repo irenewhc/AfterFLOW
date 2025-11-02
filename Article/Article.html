@@ -15,6 +15,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- 輪播套件 -->
+    <link rel="stylesheet" href="../assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="../assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <script src="../assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
 
 </head>
 
@@ -159,7 +163,7 @@
         <!-- picture -->
 
         <section class="picture">
-            <div class="pic">
+            <div class="pic owl-carousel owl-theme">
                 <div class="event-pic">
                     <img src="../assets/Event/Civic_Centre/10-min.jpg" alt="">
                 </div>
@@ -276,6 +280,30 @@
             })
 
         })
+
+
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+
+                loop: true,              // 啟用循環播放
+                autoplay: true,          // 自動播放
+                autoplayTimeout: 2000,   // 每2秒切換
+                autoplaySpeed: 1000,     // 動畫速度1秒
+                autoplayHoverPause: true,// 滑鼠懸停暫停
+                // items: 3,                // 同時顯示？個
+                margin: 0,              // 項目間距
+
+                //關鍵設置
+                autoWidth: true,         // 啟用自動寬度(使用CSS設定的寬度)
+                margin: 0,               // margin設為0(用CSS控制)
+
+                // nav: true,               // 顯示導航
+                responsive: false        // 關閉響應式(用CSS media query控制)
+
+            });
+
+        });
+
     </script>
 
 
