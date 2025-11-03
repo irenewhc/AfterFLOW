@@ -239,9 +239,6 @@ p {font-size: 1.4rem;}
     width: 50%;
 }
 
-.top li {
-}
-
 .top ul a {
     font-size: 1.8rem;
     color: #fff;
@@ -283,7 +280,7 @@ p {font-size: 1.4rem;}
 .banner h5 {
     color: #fff;
     line-height: 60px;
-    letter-spacing: 1em;
+    letter-spacing: 0.5em;
 }
 
 .banner i {
@@ -305,10 +302,10 @@ p {font-size: 1.4rem;}
 
     /* overflow-x: hidden; */
 
-    position: relative;
+    /* position: relative; */
 }
 
-.event>div {
+.event-wrapper {
     overflow-x: hidden;
 }
 
@@ -407,16 +404,12 @@ p {font-size: 1.4rem;}
     position: sticky;
     top: 50vh;
     left: 60px;
-    bottom: 20px;
+    /* bottom: 100px; */
     /* position: absolute; */
 
     width: 50%;
 
     z-index: -1;
-}
-
-.event {
-    height: 100vh;
 }
 
 
