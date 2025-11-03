@@ -217,8 +217,22 @@ p {font-size: 1.4rem;}
     color: #020F1A;
     text-decoration: none;
     line-height: 25px;
-    border-bottom: 2px solid #020F1A;
+    border-bottom: 1px solid #020F1A;
     display: block;
+
+    background-image: linear-gradient(to right, #020F1A, #020F1A);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /* 固定在右邊，才會從右邊離開 */
+    background-size: 0% 0.5px;
+    transition: background-size 0.4s ease-out;
+}
+
+.btn-contact:hover {
+    /* 將寬度從 0% 變為 100%，線條就會從左邊滑出填滿整個文字寬度 */
+    background-size: 100% 2px;
+    background-position: left bottom;
+    border-bottom: none;
 }
 
 .top ul {
@@ -232,8 +246,21 @@ p {font-size: 1.4rem;}
     font-size: 1.8rem;
     color: #020F1A;
     text-decoration: none;
-    line-height: 60px;
+    line-height: 36px;       /* 因為hover從60改32 */
     display: block;
+
+    background-image: linear-gradient(to right, #020F1A, #020F1A);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /* 固定在右邊，才會從右邊離開 */
+    background-size: 0% 2px;
+    transition: background-size 0.4s ease-out;
+}
+
+.top ul a:hover {
+    /* 將寬度從 0% 變為 100%，線條就會從左邊滑出填滿整個文字寬度 */
+    background-size: 100% 2px;
+    background-position: left bottom;
 }
 
 /*---------------------------------- about */
