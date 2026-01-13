@@ -265,14 +265,14 @@ p {font-size: 1.4rem;}
 /*---------------------------------- main */
 main {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 160px; 
     padding: 0 135px 160px;
 }
 
 /*---------------------------------- contact */
 .contact {
-    width: 35vw;
+    width: 63vw;
     padding: 16px;
 }
 
@@ -317,8 +317,9 @@ main {
 
 
 .form {
-    width: 560px;
+    width: 100%;
     margin-top: 108px;
+    padding-left: 5vw;
 }
 
 .btn {
