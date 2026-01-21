@@ -113,10 +113,29 @@
 ![網站架構](https://github.com/user-attachments/assets/e5e45f78-c84a-40ee-945b-a20bc19c977d)
 
 
+---
+
+##  未來重構計畫 (Future Roadmap)
+
+目前規劃以 Vue.js 3.0 進行網站重構，預計包含以下內容：
+
+
+* **元件化設計 (Componentization):**
+    將 `Header`, `Footer` 及 `EventCard` 等 UI 拆解為獨立元件，提升複用性。
+* **狀態管理與功能 (State & Features):**
+    導入 **Pinia** 管理全域資料；
+  利用 **Computed** 實作 FAQ 頁面的即時搜尋過濾。
+* **後端整合 (Backend Integration):**
+    使用 **PHP** 搭配 **MySQL** 建置 RESTful API，透過 **Axios** 實現表單資料的非同步寫入。
+* **套件汰換 (Library Migration):**
+    * `OwlCarousel2` → **Swiper.js**
+    * `Textillate.js` / `Vegas.js` → **GSAP**
+
+
 
 ---
 
-## 參考資料 (References)
+### 參考資料 (References)
 
 在開發與設計過程中，參考了以下資源：
 * **Case Studies:** [ArchDaily - Cultural Spaces Adaptive Reuse](https://www.archdaily.com/)
