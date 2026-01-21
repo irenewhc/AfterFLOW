@@ -48,7 +48,15 @@
 ### 核心技術 (Core)
 * **HTML5 / CSS3** (Flexbox & Grid Layout)
 * **JavaScript (ES6) / jQuery**
-* **RWD** (Responsive Web Design)  
+* **RWD** (Responsive Web Design)
+  
+| 斷點 (Breakpoint) | 裝置定義 (Device Type) | 說明 (Description) |
+| :--- | :--- | :--- |
+| **1200px** | Large Desktop | 適合大型桌機或高解析度螢幕 |
+| **992px** | Tablet Landscape | 適合一般筆電或平板橫向模式 |
+| **768px** | Tablet Portrait / Mobile Landscape | 適合平板直向或手機橫向模式 |
+| **576px** | Mobile Portrait | 適合一般主流智慧型手機直向 |
+| **440px** | Mobile Portrait (Small) | 針對小尺寸手機 (如 iPhone SE) 進行優化 |
 
 ＿     
 ### 動畫與特效實作 (Plugins & Effects)
