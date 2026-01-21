@@ -64,7 +64,7 @@
 ### 標誌設計 (Logo Concept)
 以建築有稜角的線條為起點，結尾轉化為風的柔軟弧度與筆刷感，象徵「未完待續」的生命力。  
 
-<img src="./assets/LOGO/LOGO+W_C.png" width="300" alt="AfterFLOW Logo">  
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="./assets/LOGO/LOGO+W_C.png" width="300" alt="AfterFLOW Logo">  
 
 ＿     
 ### 色彩計畫 (Color Palette)
@@ -101,6 +101,9 @@
 * **Article (建築專欄):** 分享各種建築再生的知識文章與國內外經典案例解析（非本團隊作品）。
 * **FAQ (常見問題):** 法規權益、結構安全、成本估算等改建諮詢。
 * **Contact (聯絡):** 合作邀約與諮詢表單。
+
+![網站架構](https://github.com/user-attachments/assets/e5e45f78-c84a-40ee-945b-a20bc19c977d)
+
 
 
 ---
