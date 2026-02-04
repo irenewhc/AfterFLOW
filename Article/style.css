@@ -346,8 +346,13 @@ main {
     text-align: justify;
 }
 
+.content{
+    overflow: hidden;
+}
+
 .float-image {
     width: 30vw;
+    max-width: 700px;
     float: left;
     margin-right: 60px;
     margin-bottom: 60px;
